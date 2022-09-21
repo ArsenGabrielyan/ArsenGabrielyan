@@ -18,11 +18,11 @@
 
 - ⚡ Փաստ՝ ես սիրում եմ զբաղվել լուսանկարչությամբ և այլ հոբբիներ
 
-### Github Stats
-
+<details>
+    <summary><h3>Github Stats</h3></summary>
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=arsengabrielyan&show_icons=true&locale=en&layout=compact" alt="arsengabrielyan" /></p>
-
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=arsengabrielyan&show_icons=true&locale=en" alt="arsengabrielyan" /></p>
+  </details>
 
 <h3 align="left">Կապ ինձ հետ`</h3>
 <p align="left">
