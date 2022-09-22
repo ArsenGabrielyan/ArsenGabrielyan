@@ -1,3 +1,5 @@
+![Header](https://github.com/ArsenGabrielyan/ArsenGabrielyan/blob/main/assets/github-header-image.png)
+
 <h1 align="center">Բարև 👋, Ես Արսենն եմ</h1>
 
 <p align="center">
