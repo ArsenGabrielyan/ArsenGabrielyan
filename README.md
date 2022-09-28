@@ -37,6 +37,8 @@
 ### :zap: Ակտիվություն
     
 <!--START_SECTION:activity-->
+1. 💪 Opened PR [#1](https://github.com/ArsenGabrielyan/loginproject/pull/1) in [ArsenGabrielyan/loginproject](https://github.com/ArsenGabrielyan/loginproject)
+2. 💪 Opened PR [#1](https://github.com/ArsenGabrielyan/somereactproject/pull/1) in [ArsenGabrielyan/somereactproject](https://github.com/ArsenGabrielyan/somereactproject)
 <!--END_SECTION:activity-->
   
 ---
