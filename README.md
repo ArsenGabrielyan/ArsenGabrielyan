@@ -34,8 +34,10 @@
 
 <details>
     <summary><h3>Ակտիվություն</h3></summary>
+    
     <!--START_SECTION:activity-->
     <!--END_SECTION:activity-->
+    
   </details>
 
 <details>
