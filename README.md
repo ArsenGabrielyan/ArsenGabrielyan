@@ -10,6 +10,7 @@
  </p>
 
 <h3 align="center">Սկսնակ Ծրագրավորող</h3>
+ <img align="right" src="https://raw.githubusercontent.com/TheDudeThatCode/TheDudeThatCode/master/Assets/Developer.gif" alt="dev" />
 
 - 🔭 Ես այժմ աշխատում եմ **ծրագրավորման վրա**
 
@@ -22,7 +23,7 @@
 - 🥅 Իմ նպատակն է **դառնալ պրոֆեսիոնալ ծրագրավորող**
 
 - ⚡ Փաստ՝ ես սիրում եմ զբաղվել **լուսանկարչությամբ և այլ հոբբիներ**
-
+          
 <h3 align="left">Կապ ինձ հետ`</h3>
 <p align="left">
 <a href="https://instagram.com/arsen.6973" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="@arsen.6973" height="30" width="40" /></a>
@@ -51,5 +52,5 @@
 <img src="https://activity-graph.herokuapp.com/graph?username=ArsenGabrielyan&bg_color=ffffff&color=222222&line=0094FF" alt="arsengabrielyan" />
   </details>
   
-### :snake: Օձը ուտում է իմ ներդրման գրաֆիկը
+### :snake: Օձը ուտում է իմ գրաֆիկը
 ![snake gif](https://github.com/ArsenGabrielyan/ArsenGabrielyan/blob/output/github-contribution-grid-snake.svg)
