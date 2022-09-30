@@ -56,8 +56,8 @@
   
   </details>
   
-### :snake: Օձը ուտում է իմ գրաֆիկը
-![snake gif](https://github.com/ArsenGabrielyan/ArsenGabrielyan/blob/output/github-contribution-grid-snake.svg)
-  
 ### Իմ առաջընթացները
 ![trophy](https://github-profile-trophy.vercel.app/?username=arsengabrielyan&margin-w=5)
+
+### :snake: Օձը ուտում է իմ գրաֆիկը
+![snake gif](https://github.com/ArsenGabrielyan/ArsenGabrielyan/blob/output/github-contribution-grid-snake.svg)
