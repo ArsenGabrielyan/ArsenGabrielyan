@@ -52,4 +52,4 @@
   </details>
   
 ### :snake: Օձը ուտում է իմ ներդրման գրաֆիկը
-![snake gif](https://github.com/ArsenGabrielyan/ArsenGabrielyan/blob/output/github-contribution-grid-snake.gif)
+![snake gif](https://github.com/ArsenGabrielyan/ArsenGabrielyan/blob/output/github-contribution-grid-snake.svg)
