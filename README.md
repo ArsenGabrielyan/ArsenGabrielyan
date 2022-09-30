@@ -46,7 +46,7 @@
 ---
   
 ### :trophy: Իմ առաջընթացները
-![trophy](https://github-profile-trophy.vercel.app/?username=arsengabrielyan&margin-w=5)
+![trophy](https://github-profile-trophy.vercel.app/?username=arsengabrielyan&margin-w=5&margin-h=5)
 
 ---
     
