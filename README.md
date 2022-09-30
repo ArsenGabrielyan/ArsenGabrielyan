@@ -50,7 +50,14 @@
 <img src="https://github-readme-stats.vercel.app/api?username=arsengabrielyan&show_icons=true&locale=en" alt="arsengabrielyan" />
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=arsengabrielyan&" alt="arsengabrielyan" />
 <img src="https://activity-graph.herokuapp.com/graph?username=ArsenGabrielyan&bg_color=ffffff&color=222222&line=0094FF" alt="arsengabrielyan" />
+  
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
+  
   </details>
   
 ### :snake: Օձը ուտում է իմ գրաֆիկը
 ![snake gif](https://github.com/ArsenGabrielyan/ArsenGabrielyan/blob/output/github-contribution-grid-snake.svg)
+  
+### Իմ առաջընթացները
+![trophy](https://github-profile-trophy.vercel.app/?username=arsengabrielyan&margin-w=5)
