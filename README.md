@@ -50,10 +50,6 @@
 <img src="https://github-readme-stats.vercel.app/api?username=arsengabrielyan&show_icons=true&locale=en" alt="arsengabrielyan" />
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=arsengabrielyan&" alt="arsengabrielyan" />
 <img src="https://activity-graph.herokuapp.com/graph?username=ArsenGabrielyan&bg_color=ffffff&color=222222&line=0094FF" alt="arsengabrielyan" />
-  
-<!--START_SECTION:waka-->
-<!--END_SECTION:waka-->
-  
   </details>
   
 ### Իմ առաջընթացները
