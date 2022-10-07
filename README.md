@@ -39,9 +39,7 @@
 ### :zap: Ակտիվություն
     
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#2](https://github.com/ArsenGabrielyan/loginproject/pull/2) in [ArsenGabrielyan/loginproject](https://github.com/ArsenGabrielyan/loginproject)
-2. 💪 Opened PR [#2](https://github.com/ArsenGabrielyan/loginproject/pull/2) in [ArsenGabrielyan/loginproject](https://github.com/ArsenGabrielyan/loginproject)
-3. 🎉 Merged PR [#1](https://github.com/ArsenGabrielyan/loginproject/pull/1) in [ArsenGabrielyan/loginproject](https://github.com/ArsenGabrielyan/loginproject)
+
 <!--END_SECTION:activity-->
   
 ---
