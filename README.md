@@ -39,11 +39,11 @@
 ### :zap: Ակտիվություն
     
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#1](https://github.com/ArsenGabrielyan/somereactproject/pull/1) in [ArsenGabrielyan/somereactproject](https://github.com/ArsenGabrielyan/somereactproject)
-2. 🎉 Merged PR [#2](https://github.com/ArsenGabrielyan/loginproject/pull/2) in [ArsenGabrielyan/loginproject](https://github.com/ArsenGabrielyan/loginproject)
-3. 💪 Opened PR [#2](https://github.com/ArsenGabrielyan/loginproject/pull/2) in [ArsenGabrielyan/loginproject](https://github.com/ArsenGabrielyan/loginproject)
-4. 🎉 Merged PR [#1](https://github.com/ArsenGabrielyan/loginproject/pull/1) in [ArsenGabrielyan/loginproject](https://github.com/ArsenGabrielyan/loginproject)
-5. 💪 Opened PR [#1](https://github.com/ArsenGabrielyan/loginproject/pull/1) in [ArsenGabrielyan/loginproject](https://github.com/ArsenGabrielyan/loginproject)
+1. 🎉 Merged PR [#3](https://github.com/ArsenGabrielyan/jsPractics/pull/3) in [ArsenGabrielyan/jsPractics](https://github.com/ArsenGabrielyan/jsPractics)
+2. 💪 Opened PR [#3](https://github.com/ArsenGabrielyan/jsPractics/pull/3) in [ArsenGabrielyan/jsPractics](https://github.com/ArsenGabrielyan/jsPractics)
+3. 🎉 Merged PR [#2](https://github.com/ArsenGabrielyan/jsPractics/pull/2) in [ArsenGabrielyan/jsPractics](https://github.com/ArsenGabrielyan/jsPractics)
+4. 💪 Opened PR [#2](https://github.com/ArsenGabrielyan/jsPractics/pull/2) in [ArsenGabrielyan/jsPractics](https://github.com/ArsenGabrielyan/jsPractics)
+5. 🎉 Merged PR [#1](https://github.com/ArsenGabrielyan/jsPractics/pull/1) in [ArsenGabrielyan/jsPractics](https://github.com/ArsenGabrielyan/jsPractics)
 <!--END_SECTION:activity-->
   
 ---
