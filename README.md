@@ -3,10 +3,10 @@
 <h1 align="center">Բարև 👋, Ես Արսենն եմ</h1>
 
 <p align="center">
-  <a href="https://www.youtube.com/channel/UC406AOvJFhKXEZjPlwfEqhw" targe="_blank"><img src="https://img.shields.io/youtube/channel/subscribers/UC406AOvJFhKXEZjPlwfEqhw?color=ff0000&label=%D4%B2%D5%A1%D5%AA%D5%A1%D5%B6%D5%B8%D6%80%D5%A4%D5%B6%D5%A5%D6%80&style=for-the-badge" alt="subCount"/></a>
-  <a href="https://arsen-g.web.app/" target="_blank"><img src="https://img.shields.io/website?down_color=ff0000&down_message=%D5%95%D6%86%D5%AC%D5%A1%D5%B5%D5%B6&label=arsen-g.web.app&style=for-the-badge&up_color=22b455&up_message=%D5%95%D5%B6%D5%AC%D5%A1%D5%B5%D5%B6&url=https%3A%2F%2Farsen-g.web.app%2F" alt="websiteStatus"/></a>
-  <img src="https://img.shields.io/github/followers/ArsenGabrielyan?label=%20Github%20%D5%80%D5%A5%D5%BF%D6%87%D5%B8%D6%80%D5%A4%D5%B6%D5%A5%D6%80&style=for-the-badge" alt="GithubFollowers"/>
-  <img src="https://komarev.com/ghpvc/?username=arsengabrielyan&label=Դիտումներ&color=E05D44&style=for-the-badge" alt="arsengabrielyan" />
+  <a href="https://arsen-g.web.app/" target="_blank"><img src="https://img.shields.io/website?down_color=ff0000&down_message=Offline&label=Website&style=for-the-badge&up_color=22b455&up_message=Online&url=https%3A%2F%2Farsen-g.web.app%2F" alt="websiteStatus"/></a>
+  <img src="https://img.shields.io/github/followers/ArsenGabrielyan?label=Followers&style=for-the-badge" alt="GithubFollowers"/>
+  <img src="https://komarev.com/ghpvc/?username=arsengabrielyan&label=Views&color=E05D44&style=for-the-badge" alt="arsengabrielyan" />
+  <img alt="GitHub User's stars" src="https://img.shields.io/github/stars/ArsenGabrielyan?color=yellow&label=Stars&logo=github&style=for-the-badge">
  </p>
 
 <h3 align="center">Սկսնակ Ծրագրավորող</h3>
