@@ -52,6 +52,11 @@
 ![trophy](https://github-profile-trophy.vercel.app/?username=arsengabrielyan&margin-w=5&margin-h=5)
 
 ---
+
+### :blue_book: Իմ պրոյեկտները
+[![ReadMe Card](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenGabrielyan&repo=ng-sample-projects&count_private=true)](https://github.com/ArsenGabrielyan/ng-sample-projects)
+
+---
     
 <details>
     <summary><h3>:zap: Github Stats</h3></summary>
