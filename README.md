@@ -39,10 +39,10 @@
 ### :zap: Ակտիվություն
     
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#9](https://github.com/ArsenGabrielyan/webDevPractics/pull/9) in [ArsenGabrielyan/webDevPractics](https://github.com/ArsenGabrielyan/webDevPractics)
-2. 💪 Opened PR [#9](https://github.com/ArsenGabrielyan/webDevPractics/pull/9) in [ArsenGabrielyan/webDevPractics](https://github.com/ArsenGabrielyan/webDevPractics)
-3. 🎉 Merged PR [#8](https://github.com/ArsenGabrielyan/webDevPractics/pull/8) in [ArsenGabrielyan/webDevPractics](https://github.com/ArsenGabrielyan/webDevPractics)
-4. 💪 Opened PR [#8](https://github.com/ArsenGabrielyan/webDevPractics/pull/8) in [ArsenGabrielyan/webDevPractics](https://github.com/ArsenGabrielyan/webDevPractics)
+1. 🎉 Merged PR [#2](https://github.com/ArsenGabrielyan/somereactproject/pull/2) in [ArsenGabrielyan/somereactproject](https://github.com/ArsenGabrielyan/somereactproject)
+2. 💪 Opened PR [#2](https://github.com/ArsenGabrielyan/somereactproject/pull/2) in [ArsenGabrielyan/somereactproject](https://github.com/ArsenGabrielyan/somereactproject)
+3. 🎉 Merged PR [#5](https://github.com/ArsenGabrielyan/loginproject/pull/5) in [ArsenGabrielyan/loginproject](https://github.com/ArsenGabrielyan/loginproject)
+4. 💪 Opened PR [#5](https://github.com/ArsenGabrielyan/loginproject/pull/5) in [ArsenGabrielyan/loginproject](https://github.com/ArsenGabrielyan/loginproject)
 5. 🎉 Merged PR [#7](https://github.com/ArsenGabrielyan/webDevPractics/pull/7) in [ArsenGabrielyan/webDevPractics](https://github.com/ArsenGabrielyan/webDevPractics)
 <!--END_SECTION:activity-->
   
