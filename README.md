@@ -54,7 +54,8 @@
 ---
 
 ### :blue_book: Իմ պրոյեկտները
-[![ReadMe Card](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenGabrielyan&repo=ng-sample-projects&count_private=true)](https://github.com/ArsenGabrielyan/ng-sample-projects)
+[![Angular Samples](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenGabrielyan&repo=ng-sample-projects&count_private=true)](https://github.com/ArsenGabrielyan/ng-sample-projects)
+[![Next CodeBlog](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenGabrielyan&repo=coding-blog-nextjs&count_private=true)](https://github.com/ArsenGabrielyan/coding-blog-nextjs)
 
 ---
     
