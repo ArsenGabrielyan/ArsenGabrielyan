@@ -1,32 +1,21 @@
 ![Header](https://github.com/ArsenGabrielyan/ArsenGabrielyan/blob/main/assets/github-header-image.png)
 
 <h1 align="center">Բարև 👋, Ես Արսենն եմ</h1>
-
 <p align="center">
   <a href="https://www.youtube.com/channel/UC406AOvJFhKXEZjPlwfEqhw" target="_blank"><img alt="YouTube Channel Subscribers" src="https://img.shields.io/youtube/channel/subscribers/UC406AOvJFhKXEZjPlwfEqhw?color=ff0000&style=for-the-badge&logo=youtube"></a>
   <a href="https://arsen-g.web.app/" target="_blank"><img src="https://img.shields.io/website?down_color=ff0000&down_message=Offline&label=Website&style=for-the-badge&up_color=22b455&up_message=Online&url=https%3A%2F%2Farsen-g.web.app%2F" alt="websiteStatus"/></a>
   <img src="https://img.shields.io/github/followers/ArsenGabrielyan?label=Followers&style=for-the-badge&logo=github" alt="GithubFollowers"/>
   <img src="https://komarev.com/ghpvc/?username=arsengabrielyan&label=Views&color=orange&style=for-the-badge" alt="arsengabrielyan" />
   <img alt="GitHub User's stars" src="https://img.shields.io/github/stars/ArsenGabrielyan?color=yellow&label=Stars&logo=github&style=for-the-badge">
- </p>
-
+</p>
 <h3 align="center">Սկսնակ Ծրագրավորող</h3>
- <img align="right" src="https://raw.githubusercontent.com/TheDudeThatCode/TheDudeThatCode/master/Assets/Developer.gif" alt="dev" />
+<img align="right" src="https://raw.githubusercontent.com/TheDudeThatCode/TheDudeThatCode/master/Assets/Developer.gif" alt="dev" />
 
 - 🔭 Ես այժմ աշխատում եմ **ծրագրավորման վրա**
-
 - 🌱 Ես այս պահին կատարում եմ **մի քանի հանձնարարություններ**
-
 - 📫 Ինչպես հասնել ինձ՝ **[Այցելեք իմ վեբ կայքը](https://arsen-g.web.app/)**
-
 - 🥅 Իմ նպատակն է **դառնալ Full Stack ծրագրավորող**
-
 - ⚡ Փաստ՝ ես սիրում եմ զբաղվել **լուսանկարչությամբ և այլ հոբբիներ**
-          
-<h3>Կապ ինձ հետ`</h3>
-<a href="https://instagram.com/arsen_photo.6973" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="@arsen_photo.6973" height="30" width="40" /></a>
-<a href="https://www.youtube.com/channel/UC406AOvJFhKXEZjPlwfEqhw" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="arsen gabrielyan" height="30" width="40"/></a>
-<a href="https://stackoverflow.com/users/14779467/arsen-2005"><img src="https://github.com/rahuldkjain/github-profile-readme-generator/blob/master/src/images/icons/Social/stack-overflow.svg" alt="arsen-2005" height="40" width="40"/></a>
 
 <h3>Լեզուներ և գործիքներ՝</h3>
 <a href="https://code.visualstudio.com/"><img src="https://user-images.githubusercontent.com/62609185/97418448-43ae2200-1922-11eb-8906-bb03fdf14932.png" alt="vscode" width="40" height="40"/></a>
