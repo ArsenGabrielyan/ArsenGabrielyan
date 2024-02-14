@@ -58,6 +58,7 @@
 [![Angular Samples](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenGabrielyan&repo=ng-sample-projects&count_private=true)](https://github.com/ArsenGabrielyan/ng-sample-projects)
 [![Eshop-Project](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenGabrielyan&repo=eshop-project&count_private=true)](https://github.com/ArsenGabrielyan/eshop-project)
 [![Next CodeBlog](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenGabrielyan&repo=coding-blog-nextjs&count_private=true)](https://github.com/ArsenGabrielyan/coding-blog-nextjs)
+[![Next ProgChat](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenGabrielyan&repo=progchat-nextjs&count_private=true)](https://github.com/ArsenGabrielyan/progchat-nextjs)
 
 ---
     
