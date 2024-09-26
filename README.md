@@ -18,7 +18,7 @@
 - ⚡ Փաստ՝ ես սիրում եմ զբաղվել **լուսանկարչությամբ և այլ հոբբիներ**
 - 👨‍💻 Բոլոր պրոյեկտները կարող եք ուսումնասիրել **[այստեղ](#blue_book-իմ-պրոյեկտները)**
 
-<h3>Լեզուներ և գործիքներ՝</h3>
+### Լեզուներ և գործիքներ՝
 <a href="https://code.visualstudio.com/"><img src="https://user-images.githubusercontent.com/62609185/97418448-43ae2200-1922-11eb-8906-bb03fdf14932.png" alt="vscode" width="40" height="40"/></a>
 <a href="https://getbootstrap.com"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/></a>
 <a href="https://www.w3schools.com/css/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/></a>
@@ -35,6 +35,9 @@
 <a href="https://angular.io"><img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular" width="40" height="40"/></a>
 <a href="https://nextjs.org/"><img src="https://www.drupal.org/files/project-images/nextjs-icon-dark-background.png" alt="next" width="40" height="40"/></a>
 <a href="https://socket.io/"><img src="https://avatars.githubusercontent.com/u/10566080?s=200&v=4" alt="socketio" width="40" height="40"/></a>
+<a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/></a>
+<a href="https://expressjs.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/></a>
+<a href="https://www.mysql.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/></a> 
 
 ---
   
