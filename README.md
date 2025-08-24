@@ -74,6 +74,7 @@
     <img src="https://github-readme-stats.vercel.app/api/top-langs?username=arsengabrielyan&show_icons=true&locale=en&layout=compact&count_private=true" alt="arsengabrielyan" />
     <img src="https://github-readme-stats.vercel.app/api?username=arsengabrielyan&show_icons=true&locale=en&count_private=true" alt="arsengabrielyan" />
     <img src="https://github-readme-streak-stats.herokuapp.com/?user=arsengabrielyan&" alt="arsengabrielyan" />
+<img src="https://github-contributor-stats.vercel.app/api?username=ArsenGabrielyan&limit=5&combine_all_yearly_contributions=true" />
 </details>
 
 <picture>
