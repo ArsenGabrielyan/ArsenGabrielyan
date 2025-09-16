@@ -99,9 +99,9 @@
       <img alt="ArsenGabrielyan's Github Stats" src="https://github-readme-stats.vercel.app/api?username=ArsenGabrielyan&show_icons=true&count_private=true" />
     </picture>
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=ArsenGabrielyan&theme=dark" />
-      <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com/?user=ArsenGabrielyan" />
-      <img alt="Current Streak" src="https://streak-stats.demolab.com/?user=ArsenGabrielyan"/>
+      <source media="(prefers-color-scheme: dark)" srcset="https://nirzak-streak-stats.vercel.app/?user=ArsenGabrielyan&theme=dark" />
+      <source media="(prefers-color-scheme: light)" srcset="https://nirzak-streak-stats.vercel.app/?user=ArsenGabrielyan" />
+      <img alt="Current Streak" src="https://nirzak-streak-stats.vercel.app/?user=ArsenGabrielyan"/>
     </picture>
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://github-contributor-stats.vercel.app/api?username=ArsenGabrielyan&limit=5&theme=dark&combine_all_yearly_contributions=true" />
