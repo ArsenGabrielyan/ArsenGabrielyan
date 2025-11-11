@@ -41,11 +41,11 @@
   --sidebar-border: oklch(0.90 0.07 222.20);
   --sidebar-ring: oklch(0.94 0.03 239.82);
 
-  --font-sans: "montserrat", "montserrat Fallback", sans-serif;
+  --font-sans: "Montserrat", "Montserrat Fallback", sans-serif;
   --font-mono: Fira Code, monospace;
-  --font-heading: "kamar", "kamar Fallback", "Noto Sans Armenian", sans-serif
+  --font-heading: "Kamar", "Kamar Fallback", "Noto Sans Armenian", sans-serif;
 
-  --radius: 0.65rem;
+  --radius: 0.625rem;
   
   --shadow-2xs: 0 1px 3px 0px oklch(0.40 0.14 256.46 / 0.05);
   --shadow-xs: 0 1px 3px 0px oklch(0.40 0.14 256.46 / 0.05);
@@ -151,6 +151,10 @@
   --shadow-lg: var(--shadow-lg);
   --shadow-xl: var(--shadow-xl);
   --shadow-2xl: var(--shadow-2xl);
+
+  --breakpoint-xs: 30rem;
+  --breakpoint-2xl: 100rem;
+  --breakpoint-3xl: 120rem;
 }
 
 @layer base {

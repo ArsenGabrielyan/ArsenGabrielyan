@@ -2,14 +2,14 @@ import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const kamar = localFont({
+const Kamar = localFont({
   src: "../fonts/kamar.ttf",
   display: "swap",
   preload: true,
-  variable: "--font-kamar"
+  variable: "--font-kamar",
 })
 
-const montserrat = localFont({
+const Montserrat = localFont({
   src: "../fonts/montserrat.otf",
   display: "swap",
   preload: true,
@@ -45,7 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${kamar.variable} ${montserrat.variable} antialiased`}
+        className={`${Kamar.variable} ${Montserrat.variable} antialiased`}
       >
         {children}
       </body>
