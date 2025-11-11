@@ -36,7 +36,14 @@ export default function SiteHeader(){
                <ul className={cn("block md:flex justify-center items-center gap-4 bg-background md:bg-transparent absolute md:static top-16 left-0 w-full md:w-fit h-screen md:h-fit text-center md:text-left overflow-auto md:overflow-hidden space-y-2 md:space-y-0",isOpen ? "visible opacity-100 pt-5 md:pt-0" : "hidden md:visible opacity-0 md:opacity-100 pt-0")}>
                     {links.map(link=>(
                          <li key={link.anchor} className="relative">
-                              <Link href={`#${link.anchor}`} className={cn("tracking-[2px] font-light transition-all hover:text-primary",isSticky ? "text-foreground" : "text-foreground md:text-white")}>{link.name}</Link>
+                              <Link
+                                   href={`#${link.anchor}`}
+                                   className={cn(
+                                        "tracking-[2px] font-light transition-all hover:text-primary text-lg",
+                                        isSticky ? "text-foreground" : "text-foreground md:text-white"
+                                   )}
+                                   onClick={()=>setIsOpen(false)}
+                              >{link.name}</Link>
                          </li>
                     ))}
                </ul>
