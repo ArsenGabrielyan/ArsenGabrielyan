@@ -44,11 +44,6 @@
 ### :zap: Ակտիվություն
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#1](https://github.com/ArsenGabrielyan/ng-sample-projects/pull/1) in [ArsenGabrielyan/ng-sample-projects](https://github.com/ArsenGabrielyan/ng-sample-projects)
-2. 🗣 Commented on [#1](https://github.com/ArsenGabrielyan/ng-sample-projects/pull/1#issuecomment-2602928170) in [ArsenGabrielyan/ng-sample-projects](https://github.com/ArsenGabrielyan/ng-sample-projects)
-3. 🎉 Merged PR [#5](https://github.com/ArsenGabrielyan/loginproject/pull/5) in [ArsenGabrielyan/loginproject](https://github.com/ArsenGabrielyan/loginproject)
-4. 💪 Opened PR [#5](https://github.com/ArsenGabrielyan/loginproject/pull/5) in [ArsenGabrielyan/loginproject](https://github.com/ArsenGabrielyan/loginproject)
-5. 🎉 Merged PR [#7](https://github.com/ArsenGabrielyan/webDevPractics/pull/7) in [ArsenGabrielyan/webDevPractics](https://github.com/ArsenGabrielyan/webDevPractics)
 <!--END_SECTION:activity-->
   
 ---
