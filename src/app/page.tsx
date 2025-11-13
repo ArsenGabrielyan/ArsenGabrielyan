@@ -1,5 +1,6 @@
 import SiteHeader from "@/components/layout/header";
 import AchievementsSection from "@/components/sections/achievements";
+import PortfolioSection from "@/components/sections/portfolio";
 import ServicesSection from "@/components/sections/services";
 import SiteSection from "@/components/site-section";
 import { Button } from "@/components/ui/button";
@@ -23,6 +24,7 @@ export default function Home() {
       </SiteSection>
       <ServicesSection/>
       <AchievementsSection/>
+      <PortfolioSection/>
     </>
   );
 }
