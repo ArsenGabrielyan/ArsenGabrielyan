@@ -13,3 +13,12 @@ export interface IAchievement{
      name: string,
      url: string
 }
+export type PortfolioItemType = "project" | "other";
+export interface IPortfolioItem{
+     image?: string,
+     name: string,
+     description: string,
+     url: string,
+     githubUrl?: string,
+     type: PortfolioItemType
+}
