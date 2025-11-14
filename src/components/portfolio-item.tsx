@@ -23,9 +23,9 @@ export default function PortfolioItem({data, isMobile, className}: PortfolioItem
                          <ItemHeader>
                               <Image
                                    src={data.image}
-                                   alt="calm-mood"
-                                   width={150}
-                                   height={150}
+                                   alt="item-image"
+                                   width={200}
+                                   height={200}
                                    className="aspect-square w-full rounded-sm object-cover"
                               />
                          </ItemHeader>
@@ -33,9 +33,9 @@ export default function PortfolioItem({data, isMobile, className}: PortfolioItem
                          <ItemMedia variant="image" className="size-20">
                               <Image
                                    src={data.image}
-                                   alt="calm-mood"
-                                   width={150}
-                                   height={150}
+                                   alt="item-image"
+                                   width={200}
+                                   height={200}
                                    className="aspect-square w-full rounded-sm object-cover"
                               />
                          </ItemMedia>

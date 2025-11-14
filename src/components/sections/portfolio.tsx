@@ -70,9 +70,9 @@ export default function PortfolioSection(){
                <p>Այստեղ դուք կտեսնեք իմ պրոյեկտները, տեսանյութերը և այլ ստեղծագործություններ:</p>
                <div className="grid grid-cols-1 lg:grid-cols-[repeat(auto-fit,minmax(250px,1fr))] max-w-full gap-3 h-fit lg:h-[56vh]">
                     {Object.entries(item).map(([type,list])=>
-                         <div key={type} className="flex justify-center items-center flex-col h-fit lg:h-[56vh] p-2.5 mt-2.5 lg:mt-10 space-y-2.5 lg:space-y-10">
+                         <div key={type} className="w-full flex justify-center items-center flex-col h-fit lg:h-[56vh] p-2.5 mt-2.5 lg:mt-10 space-y-2.5 lg:space-y-10">
                               <h2 className="mb-2 lg:mb-16 text-xl sm:text-2xl font-semibold border-b-2 border-primary w-fit pb-1">{itemHeadings[type as PortfolioItemType]}</h2>
-                              <div className="p-16">
+                              <div className="p-10 w-full">
                                    <Carousel
                                         orientation={orientation}
                                         opts={{
