@@ -15,7 +15,7 @@ const links = [
 ]
 
 export default function SiteHeader(){
-     const isMobile = useIsMobile("tablet");
+     const isMobile = useIsMobile();
      const [isOpen, setIsOpen] = useState(false);
      const [isSticky, setIsSticky] = useState(false);
      useEffect(()=>{
@@ -29,7 +29,7 @@ export default function SiteHeader(){
      },[])
      return (
           <header id="header" className={cn("fixed top-0 left-0 w-full flex justify-between items-center px-6 lg:px-24 z-10 transition-all",isSticky ? "bg-background py-3 border-b border-primary" : "bg-background md:bg-transparent py-3 lg:py-9 border-b-0")}>
-               <Link href="#" className={cn(
+               <Link href="/" className={cn(
                     "font-heading font-semibold text-xl xs:text-3xl capitalize tracking-[2px] transition-all",
                     isSticky ? "text-primary" : "text-foreground md:text-white"
                )}>Արսեն Գ.</Link>

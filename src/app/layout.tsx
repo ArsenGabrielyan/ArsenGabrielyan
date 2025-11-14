@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Toaster } from "@/components/ui/sonner";
 
 const Kamar = localFont({
   src: "../fonts/kamar.ttf",
@@ -48,6 +49,11 @@ export default function RootLayout({
         className={`${Kamar.variable} ${Montserrat.variable} antialiased`}
       >
         {children}
+        <Toaster
+          richColors
+          closeButton
+          duration={2500}
+        />
       </body>
     </html>
   );
