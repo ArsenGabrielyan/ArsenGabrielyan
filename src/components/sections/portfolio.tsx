@@ -5,11 +5,14 @@ import { IPortfolioItem, PortfolioItemType } from "@/lib/types"
 import PortfolioItem from "../portfolio-item"
 import { useIsMobile } from "@/hooks/use-mobile"
 import { useMemo } from "react"
+import { Button } from "../ui/button"
+import Link from "next/link"
+import { SiGithub } from "react-icons/si"
 
 const portfolioItems: IPortfolioItem[] = [
      {
           image: "/logos/calm-mood.png",
-          name: "Հանգիստ տրամադրություն",
+          name: "Հանգիստ Տրամադրություն",
           description: "Հավելված, որը կօգնի ձեզ հանգստացնել մարդու նյարդային համակարգը սթրեսի, լարվածության կամ դեպրեսիայի դեպքում։",
           url: "https://calm-mood.vercel.app",
           githubUrl: "https://github.com/ArsenGabrielyan/calm-mood",
@@ -25,7 +28,7 @@ const portfolioItems: IPortfolioItem[] = [
      },
      {
           image: "/logos/cv-agir.png",
-          name: "CV-ագիր (Դեմո)",
+          name: "CV-ագիր (Դեմո տարբերակ)",
           description: "Ինտերակտիվ ռեզյումեի գեներատոր, որն ունի QR կոդ յուրաքանչյուր օգտատիրոջ կողմից ստեղծված ռեզյումեի վրա",
           url: "https://cv-agir.vercel.app",
           githubUrl: "https://github.com/ArsenGabrielyan/cv-agir",
@@ -49,6 +52,14 @@ const portfolioItems: IPortfolioItem[] = [
           description: "Հետաքրքիր մուլտֆիլմներ բոլորի համար։ Այս մուլտֆիլմերը պատրաստել եմ, երբ ես փոքր էի",
           url: "https://www.youtube.com/playlist?list=PLSI6KSDJfq-IcQ4ld9W1m_f8hnJTNe7gJ",
           type: "other"
+     },
+     {
+          image: "/logos/harts.png",
+          name: "Հարց (Բետա տարբերակ)",
+          description: "Առցանց խաղային ուսուցման հարթակ՝ օգտատիրոջ կողմից ստեղծված թեստերով",
+          githubUrl: "https://github.com/ArsenGabrielyan/harts-quiz",
+          url: "https://harts-quiz.onrender.com/",
+          type: "project"
      }
 ]
 
@@ -64,14 +75,13 @@ export default function PortfolioSection(){
           acc[val.type] = portfolioItems.filter(item=>item.type===val.type);
           return acc;
      },{} as Record<PortfolioItemType,IPortfolioItem[]>),[])
-     console.log(item)
      return (
-          <SiteSection sectionTitle="Պորտֆոլիո" maxWidth="full">
+          <SiteSection sectionTitle="Պորտֆոլիո" maxWidth="full" id="portfolio">
                <p>Այստեղ դուք կտեսնեք իմ պրոյեկտները, տեսանյութերը և այլ ստեղծագործություններ:</p>
-               <div className="grid grid-cols-1 lg:grid-cols-[repeat(auto-fit,minmax(250px,1fr))] max-w-full gap-3 h-fit lg:h-[56vh]">
+               <div className="grid grid-cols-1 lg:grid-cols-[repeat(auto-fit,minmax(250px,1fr))] max-w-full gap-3 h-fit lg:h-[56vh] mt-20 mb-10">
                     {Object.entries(item).map(([type,list])=>
-                         <div key={type} className="w-full flex justify-center items-center flex-col h-fit lg:h-[56vh] p-2.5 mt-2.5 lg:mt-10 space-y-2.5 lg:space-y-10">
-                              <h2 className="mb-2 lg:mb-16 text-xl sm:text-2xl font-semibold border-b-2 border-primary w-fit pb-1">{itemHeadings[type as PortfolioItemType]}</h2>
+                         <div key={type} className="w-full flex justify-center items-center flex-col h-fit lg:h-[56vh] p-2.5 mt-2.5 space-y-2.5 lg:space-y-10">
+                              <h2 className="mb-5 text-xl sm:text-2xl font-semibold border-b-2 border-primary w-fit pb-1">{itemHeadings[type as PortfolioItemType]}</h2>
                               <div className="p-10 w-full">
                                    <Carousel
                                         orientation={orientation}
@@ -85,6 +95,15 @@ export default function PortfolioSection(){
                                                        <PortfolioItem className="w-full" data={item} isMobile={isMobile}/>
                                                   </CarouselItem>
                                              ))}
+                                             {type==="project" && (
+                                                  <CarouselItem className="xs:basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5 flex justify-center items-center">
+                                                       <Button asChild>
+                                                            <Link href="https://github.com/ArsenGabrielyan?tab=repositories">
+                                                                 <SiGithub/> Բոլոր պրոյեկտները
+                                                            </Link>
+                                                       </Button>
+                                                  </CarouselItem>
+                                             )}
                                         </CarouselContent>
                                         <CarouselPrevious/>
                                         <CarouselNext/>
