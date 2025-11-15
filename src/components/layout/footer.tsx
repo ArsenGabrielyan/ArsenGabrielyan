@@ -6,7 +6,7 @@ import { SiGithub, SiInstagram, SiYoutube } from "react-icons/si";
 export default function SiteFooter(){
      const year = new Date().getFullYear();
      return (
-          <footer className="py-3 px-5 flex justify-between items-center gap-2 flex-col md:flex-row border">
+          <footer className="py-3 px-5 flex justify-between items-center gap-2 flex-col md:flex-row border-t">
                <p className="text-center md:text-left text-base">&copy; {year} | Բոլոր իրավունքները պաշտպանված են</p>
                <ButtonGroup>
                     <Button variant="ghost" className="text-primary hover:text-foreground" size="icon" asChild>

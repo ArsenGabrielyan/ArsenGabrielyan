@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { Button } from "../ui/button";
 import { Menu, X } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
+import ThemeSwitcher from "../theme-changer";
 
 const links = [
      {anchor: "home", name: "Գլխավոր"},
@@ -47,9 +48,10 @@ export default function SiteHeader(){
                          </li>
                     ))}
                </ul>
+               <ThemeSwitcher isSticky={isSticky}/>
                {isMobile && (
                     <Button size="icon-lg" title="Մենյու" variant="ghost" onClick={()=>setIsOpen(prev=>!prev)}>
-                         {isOpen ? <X className="size-7"/> : <Menu className="size-7"/>}
+                         {isOpen ? <X className="size-6"/> : <Menu className="size-6"/>}
                     </Button>
                )}
           </header>

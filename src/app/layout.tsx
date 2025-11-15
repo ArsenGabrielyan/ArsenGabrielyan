@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
+import { ThemeProvider } from "next-themes";
 
 const Kamar = localFont({
   src: "../fonts/kamar.ttf",
@@ -44,16 +45,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="hy" suppressHydrationWarning>
       <body
         className={`${Kamar.variable} ${Montserrat.variable} antialiased`}
       >
-        {children}
-        <Toaster
-          richColors
-          closeButton
-          duration={2500}
-        />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+          <Toaster
+            richColors
+            closeButton
+            duration={2500}
+          />
+        </ThemeProvider>
       </body>
     </html>
   );
