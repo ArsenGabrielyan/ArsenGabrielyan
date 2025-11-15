@@ -3,11 +3,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-@import "tailwindcss";
-@import "tw-animate-css";
-
-@custom-variant dark (&:is(.dark *));
-
 :root {
   --background: oklch(99.235% 0.00425 237.366);
   --foreground: oklch(0.14 0 0);
@@ -21,7 +16,7 @@
   --secondary-foreground: oklch(0.20 0 0);
   --muted: oklch(0.98 0.02 210.10);
   --muted-foreground: oklch(61.929% 0.12838 234.269);
-  --accent: oklch(0.94 0.03 229.26);
+  --accent: oklch(90.708% 0.05874 227.182);
   --accent-foreground: oklch(0.20 0 0);
   --destructive: oklch(0.59 0.20 21.24);
   --border: oklch(79.298% 0.11829 225.649);
@@ -46,6 +41,7 @@
   --font-heading: "Kamar", "Kamar Fallback", "Noto Sans Armenian", sans-serif;
 
   --radius: 0.625rem;
+  --gallery-grid: 0.2fr 1fr;
   
   --shadow-2xs: 0 1px 3px 0px oklch(0.40 0.14 256.46 / 0.05);
   --shadow-xs: 0 1px 3px 0px oklch(0.40 0.14 256.46 / 0.05);
@@ -55,7 +51,6 @@
   --shadow-lg: 0 1px 3px 0px oklch(0.40 0.14 256.46 / 0.10), 0 4px 6px -1px oklch(0.40 0.14 256.46 / 0.10);
   --shadow-xl: 0 1px 3px 0px oklch(0.40 0.14 256.46 / 0.10), 0 8px 10px -1px oklch(0.40 0.14 256.46 / 0.10);
   --shadow-2xl: 0 1px 3px 0px oklch(0.40 0.14 256.46 / 0.25);
-  
 }
 
 .dark {
@@ -71,7 +66,7 @@
   --secondary-foreground: oklch(0.99 0 0);
   --muted: oklch(0.19 0.05 247.94);
   --muted-foreground: oklch(0.80 0.12 231.98);
-  --accent: oklch(0.22 0.05 237.32);
+  --accent: oklch(32.4% 0.07747 243.521);
   --accent-foreground: oklch(0.99 0 0);
   --destructive: oklch(0.70 0.19 22.23);
   --border: oklch(0.25 0.06 239.63);
@@ -155,15 +150,6 @@
   --breakpoint-xs: 30rem;
   --breakpoint-2xl: 100rem;
   --breakpoint-3xl: 120rem;
-}
-
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
 }
 
 @layer base {

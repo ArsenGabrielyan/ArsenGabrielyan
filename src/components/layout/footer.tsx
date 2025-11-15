@@ -11,17 +11,17 @@ export default function SiteFooter(){
                <ButtonGroup>
                     <Button variant="ghost" className="text-primary hover:text-foreground" size="icon" asChild>
                          <Link href="https://github.com/ArsenGabrielyan">
-                              <SiGithub className="size-6"/>
+                              <SiGithub className="size-5"/>
                          </Link>
                     </Button>
                     <Button variant="ghost" className="text-primary hover:text-destructive" size="icon" asChild>
                          <Link href="https://youtube.com/@Arsen_2005">
-                              <SiYoutube className="size-6"/>
+                              <SiYoutube className="size-5"/>
                          </Link>
                     </Button>
                     <Button variant="ghost" className="text-primary hover:text-[#5851DB] dark:hover:text-[#aca9ee]" size="icon" asChild>
                          <Link href="https://www.instagram.com/arsen_photo.6973">
-                              <SiInstagram className="size-6"/>
+                              <SiInstagram className="size-5"/>
                          </Link>
                     </Button>
                </ButtonGroup>

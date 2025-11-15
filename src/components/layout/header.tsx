@@ -8,11 +8,12 @@ import { useIsMobile } from "@/hooks/use-mobile";
 import ThemeSwitcher from "../theme-changer";
 
 const links = [
-     {anchor: "home", name: "Գլխավոր"},
-     {anchor: "about", name: "Իմ մասին"},
-     {anchor: "services", name: "Ծառայություններ"},
-     {anchor: "portfolio", name: "Պորտֆոլիո"},
-     {anchor: "contact", name: "Կապ"},
+     {url: "#home", name: "Գլխավոր"},
+     {url: "#about", name: "Իմ մասին"},
+     {url: "#services", name: "Ծառայություններ"},
+     {url: "#portfolio", name: "Պորտֆոլիո"},
+     {url: "#contact", name: "Կապ"},
+     {url: "/gallery", name: "Պատկերասրահ"}
 ]
 
 export default function SiteHeader(){
@@ -36,9 +37,9 @@ export default function SiteHeader(){
                )}>Արսեն Գ.</Link>
                <ul className={cn("block md:flex justify-center items-center gap-6 bg-background md:bg-transparent absolute md:static top-16 left-0 w-full md:w-fit h-screen md:h-fit text-center md:text-left overflow-auto md:overflow-hidden space-y-2 md:space-y-0",isOpen ? "visible opacity-100 pt-5 md:pt-0" : "hidden md:visible opacity-0 md:opacity-100 pt-0")}>
                     {links.map(link=>(
-                         <li key={link.anchor} className="relative">
+                         <li key={`link-${link.url.replace(/#|\//g,"")}`} className="relative">
                               <Link
-                                   href={`#${link.anchor}`}
+                                   href={`${link.url}`}
                                    className={cn(
                                         "tracking-[1.25px] font-light transition-all hover:text-primary text-lg",
                                         isSticky ? "text-foreground" : "text-foreground md:text-white"
@@ -48,7 +49,9 @@ export default function SiteHeader(){
                          </li>
                     ))}
                </ul>
-               <ThemeSwitcher isSticky={isSticky}/>
+               <ThemeSwitcher
+                    isSticky={isSticky}
+               />
                {isMobile && (
                     <Button size="icon-lg" title="Մենյու" variant="ghost" onClick={()=>setIsOpen(prev=>!prev)}>
                          {isOpen ? <X className="size-6"/> : <Menu className="size-6"/>}
