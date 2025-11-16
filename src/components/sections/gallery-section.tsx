@@ -8,7 +8,7 @@ import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "../ui/colla
 import { cn } from "@/lib/utils";
 
 const MAX_COLS = 4;
-const ASPECTS = ["aspect-square","aspect-video","aspect-3/4","aspect-4/3","aspect-9/16"]
+const ASPECTS = ["aspect-square","aspect-video","aspect-3/4","aspect-4/3","aspect-9/16","aspect-3/2","aspect-2/3"]
 
 const getRandomAspect = () => ASPECTS[Math.floor(Math.random()*ASPECTS.length)]
 
@@ -36,7 +36,7 @@ export default function GallerySection(){
      },[])
 
      return (
-          <section className="bg-background p-8 min-h-screen grid grid-cols-1 lg:grid-cols-(--gallery-grid) gap-5 relative">
+          <section className="bg-background p-8 min-h-screen grid grid-cols-1 lg:grid-cols-(--gallery-grid) gap-5 relative" id="photos">
                <div className={cn(
                     "overflow-x-hidden overflow-y-auto w-full fixed z-20 lg:z-0 top-0 lg:top-20 h-full lg:h-[90vh] lg:sticky bg-card/98 lg:bg-transparent p-4 lg:p-0 flex flex-col items-start justify-start gap-3 transition-all",
                     isOpen ? "left-0" : "-left-full"

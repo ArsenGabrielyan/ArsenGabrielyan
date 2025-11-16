@@ -5,9 +5,6 @@ import { IPortfolioItem, PortfolioItemType } from "@/lib/types"
 import PortfolioItem from "../portfolio-item"
 import { useIsMobile } from "@/hooks/use-mobile"
 import { useMemo } from "react"
-import { Button } from "../ui/button"
-import Link from "next/link"
-import { SiGithub } from "react-icons/si"
 
 const portfolioItems: IPortfolioItem[] = [
      {
@@ -95,15 +92,6 @@ export default function PortfolioSection(){
                                                        <PortfolioItem className="w-full" data={item} isMobile={isMobile}/>
                                                   </CarouselItem>
                                              ))}
-                                             {type==="project" && (
-                                                  <CarouselItem className="xs:basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5 flex justify-center items-center">
-                                                       <Button asChild>
-                                                            <Link href="https://github.com/ArsenGabrielyan?tab=repositories">
-                                                                 <SiGithub/> Բոլոր պրոյեկտները
-                                                            </Link>
-                                                       </Button>
-                                                  </CarouselItem>
-                                             )}
                                         </CarouselContent>
                                         <CarouselPrevious/>
                                         <CarouselNext/>

@@ -5,7 +5,7 @@ export interface IService{
      Icon: ForwardRefExoticComponent<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>>,
      name: string,
      desc: string,
-     link: string,
+     url: string,
      linkText: string
 }
 export interface IAchievement{
