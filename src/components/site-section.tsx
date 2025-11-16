@@ -7,7 +7,7 @@ export default function SiteSection({ sectionTitle, containerClass, maxWidth = 8
                     style: { maxWidth }
                } : {})}>
                     {!!sectionTitle && (
-                         <h2 className="text-[21px] sm:text-[27px] md:text-4xl font-extralight mb-2.5">
+                         <h2 className="text-[21px] sm:text-[27px] md:text-4xl font-semibold mb-2.5">
                               {sectionTitle}
                          </h2>
                     )}

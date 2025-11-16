@@ -2,12 +2,10 @@
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { ChevronDown, ChevronUp, Folder, ImageIcon, Menu, SearchIcon, X } from "lucide-react";
-import { useState } from "react";
-import { ButtonGroup } from "../ui/button-group";
-import { InputGroup, InputGroupAddon, InputGroupInput } from "../ui/input-group";
+import { useEffect, useState } from "react";
+import { InputGroup, InputGroupAddon, InputGroupButton, InputGroupInput } from "../ui/input-group";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "../ui/collapsible";
 import { cn } from "@/lib/utils";
-import React from "react";
 
 const MAX_COLS = 4;
 const ASPECTS = ["aspect-square","aspect-video","aspect-3/4","aspect-4/3","aspect-9/16"]
@@ -18,24 +16,29 @@ export default function GallerySection(){
      const isTablet = useIsMobile("tablet");
      const [isOpen, setIsOpen] = useState(false);
      const [isOpenAlbum, setIsOpenAlbum] = useState(false);
+     const [arr, setArr] = useState<({id: number, aspect: string})[]>([])
 
-     const sampleArray: ({id: number, aspect: string})[] = Array.from({length: 20}).map((_,i)=>{
-          return {
-               id: i+1,
-               aspect: ""
-          }
-     });
      function getCols(colIndex: number){
-          return sampleArray.filter((val)=>(val.id-1) % MAX_COLS === colIndex).map(obj=>({
+          return arr.filter(val=>(val.id-1) % MAX_COLS === colIndex).map(obj=>({
                ...obj,
                aspect: getRandomAspect()
           }))
      }
 
+     useEffect(()=>{
+          const id = requestAnimationFrame(()=>setArr(Array.from({length: 20}).map((_,i)=>{
+               return {
+                    id: i+1,
+                    aspect: ""
+               }
+          })))
+          return () => cancelAnimationFrame(id);
+     },[])
+
      return (
-          <section className="bg-background p-10 min-h-screen grid grid-cols-1 lg:grid-cols-(--gallery-grid) gap-5 relative">
+          <section className="bg-background p-8 min-h-screen grid grid-cols-1 lg:grid-cols-(--gallery-grid) gap-5 relative">
                <div className={cn(
-                    "overflow-auto w-full fixed z-20 top-0 h-full lg:static bg-card lg:bg-transparent p-4 lg:p-0 flex flex-col items-start justify-start gap-3 transition-all",
+                    "overflow-x-hidden overflow-y-auto w-full fixed z-20 lg:z-0 top-0 lg:top-20 h-full lg:h-[90vh] lg:sticky bg-card/98 lg:bg-transparent p-4 lg:p-0 flex flex-col items-start justify-start gap-3 transition-all",
                     isOpen ? "left-0" : "-left-full"
                )}>
                     {isTablet && (
@@ -43,6 +46,16 @@ export default function GallerySection(){
                               <X/>
                          </Button>
                     )}
+                    <InputGroup>
+                         <InputGroupInput/>
+                         <InputGroupAddon>
+                              <SearchIcon/>
+                         </InputGroupAddon>
+                         <InputGroupAddon align="inline-end">
+                              <InputGroupButton size="icon-xs"><X/></InputGroupButton>
+                              {/* 12 արդյունք */}
+                         </InputGroupAddon>
+                    </InputGroup>
                     <Button variant="ghost" onClick={()=>setIsOpen(false)}>
                          <ImageIcon />
                          Պատկերասրահ
@@ -60,41 +73,38 @@ export default function GallerySection(){
                               </CollapsibleTrigger>
                          </div>
                          <CollapsibleContent className="flex flex-col gap-2 py-2 px-4">
-                              hi
+                              <Button variant="ghost">
+                                   Երևան
+                              </Button>
+                              <Button variant="ghost">
+                                   Դիլիջան
+                              </Button>
+                              <Button variant="ghost">
+                                   Թբիլիսի
+                              </Button>
+                              <Button variant="ghost">
+                                   Բաթումի
+                              </Button>
                          </CollapsibleContent>
                     </Collapsible>
                </div>
                <div className="flex flex-col items-start justify-start gap-3">
-                    <div className="w-full space-y-3">
-                         <p className="flex items-center gap-3">
-                              {isTablet && (
-                                   <Button variant="outline" size="icon" onClick={()=>setIsOpen(true)}>
-                                        <Menu/>
-                                   </Button>
-                              )}
-                              Որոնել լուսանկարը
-                         </p>
-                         <ButtonGroup className="w-full">
-                              <InputGroup>
-                                   <InputGroupInput/>
-                                   <InputGroupAddon>
-                                        <SearchIcon/>
-                                   </InputGroupAddon>
-                              </InputGroup>
-                              <Button variant="primary">
-                                   Որոնել
-                              </Button>
-                         </ButtonGroup>
-                    </div>
-                    <div className="w-full grid grid-cols-4 gap-4">
-                         {[getCols(1),getCols(2),getCols(3),getCols(4)].map((cols,i)=>(
-                              <div key={i} className="flex flex-col gap-4">
-                                   {cols.map(val=>(
-                                        <div key={val.id} className={cn("bg-accent max-w-[400px]",val.aspect)}/>
-                                   ))}
-                              </div>
-                         ))}
-                    </div>
+                    {isTablet && (
+                         <Button variant="outline" size="icon" onClick={()=>setIsOpen(true)}>
+                              <Menu/>
+                         </Button>
+                    )}
+                    {(arr && arr.length>0) && (
+                         <div className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                              {[getCols(0),getCols(1),getCols(2),getCols(3)].map((cols,i)=>(
+                                   <div key={`col-${i+1}`} className="flex flex-col gap-3">
+                                        {cols.map(val=>(
+                                             <div key={val.id} className={cn("bg-accent max-w-[400px]",val.aspect)}/>
+                                        ))}
+                                   </div>
+                              ))}
+                         </div>
+                    )}
                </div>
           </section>
      )

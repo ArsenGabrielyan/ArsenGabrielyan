@@ -41,7 +41,7 @@ export default function SiteHeader(){
                               <Link
                                    href={`${link.url}`}
                                    className={cn(
-                                        "tracking-[1.25px] font-light transition-all hover:text-primary text-lg",
+                                        "tracking-[1.25px] font-regular transition-all hover:text-primary text-lg",
                                         isSticky ? "text-foreground" : "text-foreground md:text-white"
                                    )}
                                    onClick={()=>setIsOpen(false)}

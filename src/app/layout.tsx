@@ -6,6 +6,7 @@ import { ThemeProvider } from "next-themes";
 
 const Kamar = localFont({
   src: "../fonts/kamar.ttf",
+  fallback: ["Noto Sans Armenian", "sans-serif"],
   display: "swap",
   preload: true,
   variable: "--font-kamar",
@@ -13,6 +14,7 @@ const Kamar = localFont({
 
 const Montserrat = localFont({
   src: "../fonts/montserrat.otf",
+  fallback: ["BlinkMacSystemFont", 'Segoe UI', "Roboto", 'Helvetica Neue', "Arial", 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', "sans-serif"],
   display: "swap",
   preload: true,
   variable: "--font-montserrat",
