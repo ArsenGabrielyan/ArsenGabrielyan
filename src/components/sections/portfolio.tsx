@@ -88,7 +88,7 @@ export default function PortfolioSection(){
                                    >
                                         <CarouselContent className="h-fit lg:h-[56vh] w-full">
                                              {list.map((item,i)=>(
-                                                  <CarouselItem key={`item-${i+1}`} className="xs:basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5">
+                                                  <CarouselItem key={`item-${i+1}`} className="xs:basis-1/2 md:basis-1/3 lg:basis-1/4">
                                                        <PortfolioItem className="w-full" data={item} isMobile={isMobile}/>
                                                   </CarouselItem>
                                              ))}
