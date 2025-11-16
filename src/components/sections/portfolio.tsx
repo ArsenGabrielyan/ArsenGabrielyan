@@ -75,9 +75,9 @@ export default function PortfolioSection(){
      return (
           <SiteSection sectionTitle="Պորտֆոլիո" maxWidth="full" id="portfolio">
                <p>Այստեղ դուք կտեսնեք իմ պրոյեկտները, տեսանյութերը և այլ ստեղծագործություններ:</p>
-               <div className="grid grid-cols-1 lg:grid-cols-[repeat(auto-fit,minmax(250px,1fr))] max-w-full gap-3 h-fit lg:h-[56vh] mt-20 mb-10">
+               <div className="grid grid-cols-1 lg:grid-cols-[repeat(auto-fit,minmax(250px,1fr))] max-w-full gap-3 h-fit lg:h-[60vh] mt-20 mb-10">
                     {Object.entries(item).map(([type,list])=>
-                         <div key={type} className="w-full flex justify-center items-center flex-col h-fit lg:h-[56vh] p-2.5 mt-2.5 space-y-2.5 lg:space-y-10">
+                         <div key={type} className="w-full flex justify-center items-center flex-col h-fit lg:h-[60vh] p-2.5 mt-2.5 space-y-2.5 lg:space-y-10">
                               <h2 className="mb-5 text-xl sm:text-2xl font-semibold border-b-2 border-primary w-fit pb-1">{itemHeadings[type as PortfolioItemType]}</h2>
                               <div className="p-10 w-full">
                                    <Carousel
@@ -86,9 +86,9 @@ export default function PortfolioSection(){
                                              align: "start",
                                         }}
                                    >
-                                        <CarouselContent className="h-fit lg:h-[56vh] w-full">
+                                        <CarouselContent className="h-fit lg:h-[60vh] w-full">
                                              {list.map((item,i)=>(
-                                                  <CarouselItem key={`item-${i+1}`} className="xs:basis-1/2 md:basis-1/3 lg:basis-1/4">
+                                                  <CarouselItem key={`item-${i+1}`} className="xs:basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-5">
                                                        <PortfolioItem className="w-full" data={item} isMobile={isMobile}/>
                                                   </CarouselItem>
                                              ))}
