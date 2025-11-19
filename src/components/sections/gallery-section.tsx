@@ -1,40 +1,47 @@
 "use client"
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { ChevronDown, ChevronUp, Folder, ImageIcon, Menu, SearchIcon, X } from "lucide-react";
+import { ChevronDown, ChevronUp, ImageIcon, Menu, X, FolderOpen, FolderClosed } from "lucide-react";
 import { useMemo, useState } from "react";
-import { InputGroup, InputGroupAddon, InputGroupButton, InputGroupInput } from "../ui/input-group";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "../ui/collapsible";
-import { cn } from "@/lib/utils";
+import { cn, formatAlbumName } from "@/lib/utils";
 import Image from "next/image";
 import { CDN_BASE_URL } from "@/lib/utils";
 import { PaginationWithLinks } from "../ui/pagination-with-links";
+import Link from "next/link";
+import { SiInstagram } from "react-icons/si";
 
 const MAX_COLS = 5;
-const PHOTOS_PER_PAGE = 25;
 
 interface GallerySectionProps{
      photoPaths: string[],
      albums: string[],
-     params?: {pageSize?: string,page?:string}
+     pageSize: number,
+     pageNum: number
 }
-export default function GallerySection({photoPaths, albums, params}: GallerySectionProps){
+export default function GallerySection({photoPaths, albums, pageSize, pageNum}: GallerySectionProps){
      const isTablet = useIsMobile("tablet");
      const [isOpen, setIsOpen] = useState(false);
      const [isOpenAlbum, setIsOpenAlbum] = useState(false);
+     const [currAlbum, setCurrAlbum] = useState("");
 
-     const pageSize = params?.pageSize ? parseInt(params.pageSize) : PHOTOS_PER_PAGE;
-     const pageNum = params?.page ? parseInt(params.page) : 1;
-     const start = useMemo(()=>(pageNum-1) * pageSize,[pageNum,pageSize]);
+     const start = useMemo(()=>(pageNum-1) * pageSize,[pageSize,pageNum]);
      const end = useMemo(()=>start + pageSize,[pageSize,start]);
 
-     const paginatedPhotos = useMemo(() => {
-          return photoPaths.slice(start, end);
-     }, [start, end, photoPaths]);
-
-     function getCols(colIndex: number){
-          return paginatedPhotos.filter((_,i)=>i % MAX_COLS === colIndex)
+     const paginatedPhotos = useMemo(()=>
+          photoPaths
+               .filter(path=>{
+                    const category = path.split("/")[0];
+                    return category.toLowerCase().includes(currAlbum.toLowerCase());
+               })
+               .slice(start, end)
+     ,[start, end, photoPaths, currAlbum]);
+     const changeAlbum = (album: string)=>{
+          setIsOpen(false);
+          setCurrAlbum(album)
      }
+     const getCols = (colIndex: number) =>
+          paginatedPhotos.filter((_,i)=>i % MAX_COLS === colIndex)
      return (
           <section className="bg-background p-8 min-h-screen grid grid-cols-1 lg:grid-cols-(--gallery-grid) gap-5 relative" id="photos">
                <div className={cn(
@@ -46,24 +53,15 @@ export default function GallerySection({photoPaths, albums, params}: GallerySect
                               <X/>
                          </Button>
                     )}
-                    <InputGroup>
-                         <InputGroupInput/>
-                         <InputGroupAddon>
-                              <SearchIcon/>
-                         </InputGroupAddon>
-                         <InputGroupAddon align="inline-end">
-                              <InputGroupButton size="icon-xs"><X/></InputGroupButton>
-                              {/* 12 արդյունք */}
-                         </InputGroupAddon>
-                    </InputGroup>
-                    <Button variant="ghost" onClick={()=>setIsOpen(false)}>
+                    <Button variant="ghost" onClick={()=>changeAlbum("")}>
                          <ImageIcon />
                          Պատկերասրահ
                     </Button>
                     <Collapsible open={isOpenAlbum} onOpenChange={setIsOpenAlbum} className="flex flex-col gap-2 w-full">
                          <div className="flex items-center justify-between gap-4 px-3 w-full">
                               <p className="flex items-center gap-2 text-sm">
-                                   <Folder className="size-4"/> Ալբոմներ
+                                   {isOpenAlbum ? <FolderOpen className="size-4"/> : <FolderClosed className="size-4"/>}
+                                   Ալբոմներ
                               </p>
                               <CollapsibleTrigger asChild>
                                    <Button variant="ghost" size="icon" className="size-8">
@@ -74,12 +72,17 @@ export default function GallerySection({photoPaths, albums, params}: GallerySect
                          </div>
                          <CollapsibleContent className="flex flex-col gap-2 py-2 px-4">
                               {albums.map(album=>(
-                                   <Button key={album} variant="ghost">
-                                        {album[0].toUpperCase()}{album.slice(1)}
+                                   <Button key={album} variant={album===currAlbum ? "outline" : "ghost"} className="justify-start w-full" onClick={()=>changeAlbum(album)}>
+                                        <ImageIcon/> {formatAlbumName(album)}
                                    </Button>
                               ))}
                          </CollapsibleContent>
                     </Collapsible>
+                    <Button variant="outline" asChild className="w-full">
+                         <Link href="https://www.instagram.com/arsen_photo.6973/">
+                              <SiInstagram/> @arsen_photo.6973
+                         </Link>
+                    </Button>
                </div>
                <div className="flex flex-col items-start justify-start gap-3">
                     {isTablet && (

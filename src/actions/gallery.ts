@@ -6,10 +6,10 @@ export const getPhotoPaths = async()=>{
      const albumFetches = albums.map(album =>
      fetch(`${CDN_BASE_URL}/thumbnails/${album}`)
           .then(res => res.ok ? res.text() : "")
-          .then(html => {
-          return [...html.matchAll(/href="([^"]+\.(jpg|jpeg|png|webp))"/gi)]
-               .map(m => `${album}/${m[1]}`.replace(".webp", ""));
-          })
+          .then(html =>
+               [...html.matchAll(/href="([^"]+\.(jpg|jpeg|png|webp))"/gi)]
+                    .map(m => `${album}/${m[1]}`.replace(".webp", ""))
+          )
      );
      const results = await Promise.all(albumFetches);
      return results.flat();
@@ -19,8 +19,6 @@ export const getAlbums = async()=>{
      const res = await fetch(`${CDN_BASE_URL}/thumbnails`);
      const html = await res.text();
      const matches = [...html.matchAll(/href="([^"]+\/)"/g)];
-
-     return matches
-          .map(m => m[1].replace("/", ""))
+     return matches.map(m => m[1].replace("/", ""))
           .filter(name => name !== ".." && name !== "github-pages-directory-listing");
 }

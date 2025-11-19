@@ -6,12 +6,15 @@ import { getPhotoPaths, getAlbums } from "@/actions/gallery"
 export const metadata: Metadata = {
      title: "Ֆոտո Պատկերասրահ"
 }
+const PHOTOS_PER_PAGE = 25;
 
 export default async function Gallery({searchParams}: {searchParams?: Promise<{pageSize?: string,page?:string}>}){
      const params = await searchParams;
-     const photoPaths = await getPhotoPaths();
      const albums = await getAlbums();
-     
+     const photoPaths = await getPhotoPaths();
+
+     const pageSize = params?.pageSize ? parseInt(params.pageSize) : PHOTOS_PER_PAGE;
+     const pageNum = params?.page ? parseInt(params.page) : 1;
      return (
           <PageLayout>
                <section id="home" className="text-white w-full min-h-screen md:min-h-[64vh] bg-[url('/bg.png')] bg-cover bg-center bg-fixed relative">
@@ -23,7 +26,8 @@ export default async function Gallery({searchParams}: {searchParams?: Promise<{p
                <GallerySection
                     photoPaths={photoPaths}
                     albums={albums}
-                    params={params}
+                    pageNum={pageNum}
+                    pageSize={pageSize}
                />
           </PageLayout>
      )

@@ -6,3 +6,7 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export const CDN_BASE_URL = `https://arsengabrielyan.github.io/ArsenGabrielyan`;
+
+export function formatAlbumName(album: string){
+  return album.split("-").map(val=>val[0].toUpperCase() + val.slice(1)).join(" ");
+}
