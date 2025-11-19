@@ -2,38 +2,27 @@
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { ChevronDown, ChevronUp, Folder, ImageIcon, Menu, SearchIcon, X } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { InputGroup, InputGroupAddon, InputGroupButton, InputGroupInput } from "../ui/input-group";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "../ui/collapsible";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
+import { CDN_BASE_URL } from "@/lib/utils";
 
 const MAX_COLS = 4;
-const ASPECTS = ["aspect-square","aspect-video","aspect-3/4","aspect-4/3","aspect-9/16","aspect-3/2","aspect-2/3"]
 
-const getRandomAspect = () => ASPECTS[Math.floor(Math.random()*ASPECTS.length)]
-
-export default function GallerySection(){
+interface GallerySectionProps{
+     photoPaths: string[],
+     albums: string[]
+}
+export default function GallerySection({photoPaths, albums}: GallerySectionProps){
      const isTablet = useIsMobile("tablet");
      const [isOpen, setIsOpen] = useState(false);
      const [isOpenAlbum, setIsOpenAlbum] = useState(false);
-     const [arr, setArr] = useState<({id: number, aspect: string})[]>([])
 
      function getCols(colIndex: number){
-          return arr.filter(val=>(val.id-1) % MAX_COLS === colIndex).map(obj=>({
-               ...obj,
-               aspect: getRandomAspect()
-          }))
+          return photoPaths.filter((_,i)=>i % MAX_COLS === colIndex)
      }
-
-     useEffect(()=>{
-          const id = requestAnimationFrame(()=>setArr(Array.from({length: 20}).map((_,i)=>{
-               return {
-                    id: i+1,
-                    aspect: ""
-               }
-          })))
-          return () => cancelAnimationFrame(id);
-     },[])
 
      return (
           <section className="bg-background p-8 min-h-screen grid grid-cols-1 lg:grid-cols-(--gallery-grid) gap-5 relative" id="photos">
@@ -73,18 +62,11 @@ export default function GallerySection(){
                               </CollapsibleTrigger>
                          </div>
                          <CollapsibleContent className="flex flex-col gap-2 py-2 px-4">
-                              <Button variant="ghost">
-                                   Երևան
-                              </Button>
-                              <Button variant="ghost">
-                                   Դիլիջան
-                              </Button>
-                              <Button variant="ghost">
-                                   Թբիլիսի
-                              </Button>
-                              <Button variant="ghost">
-                                   Բաթումի
-                              </Button>
+                              {albums.map(album=>(
+                                   <Button key={album} variant="ghost">
+                                        {album[0].toUpperCase()}{album.slice(1)}
+                                   </Button>
+                              ))}
                          </CollapsibleContent>
                     </Collapsible>
                </div>
@@ -94,12 +76,18 @@ export default function GallerySection(){
                               <Menu/>
                          </Button>
                     )}
-                    {(arr && arr.length>0) && (
+                    {(photoPaths && photoPaths.length>0) && (
                          <div className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
                               {[getCols(0),getCols(1),getCols(2),getCols(3)].map((cols,i)=>(
                                    <div key={`col-${i+1}`} className="flex flex-col gap-3">
-                                        {cols.map(val=>(
-                                             <div key={val.id} className={cn("bg-accent max-w-[400px]",val.aspect)}/>
+                                        {cols.map((val,i)=>(
+                                             <Image
+                                                  key={`photo-${i+1}`}
+                                                  src={`${CDN_BASE_URL}/thumbnails/${val}.webp`}
+                                                  alt={`photo-${i+1}`}
+                                                  width={400}
+                                                  height={300}
+                                             />
                                         ))}
                                    </div>
                               ))}

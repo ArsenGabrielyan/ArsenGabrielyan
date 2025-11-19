@@ -1,12 +1,15 @@
 import PageLayout from "@/components/layout";
 import { Metadata } from "next";
 import GallerySection from "@/components/sections/gallery-section";
+import { getPhotoPaths, getAlbums } from "@/actions/gallery"
 
 export const metadata: Metadata = {
      title: "Ֆոտո Պատկերասրահ"
 }
 
-export default function Gallery(){
+export default async function Gallery(){
+     const photoPaths = await getPhotoPaths();
+     const albums = await getAlbums()
      return (
           <PageLayout>
                <section id="home" className="text-white w-full min-h-screen md:min-h-[64vh] bg-[url('/bg.png')] bg-cover bg-center bg-fixed relative">
@@ -15,7 +18,10 @@ export default function Gallery(){
                          <p className="text-lg sm:text-2xl md:text-4xl">Լուսանկարներ Արսենից</p>
                     </div>
                </section>
-               <GallerySection/>
+               <GallerySection
+                    photoPaths={photoPaths}
+                    albums={albums}
+               />
           </PageLayout>
      )
 }
