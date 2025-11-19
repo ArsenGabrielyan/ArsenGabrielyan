@@ -2,28 +2,39 @@
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { ChevronDown, ChevronUp, Folder, ImageIcon, Menu, SearchIcon, X } from "lucide-react";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { InputGroup, InputGroupAddon, InputGroupButton, InputGroupInput } from "../ui/input-group";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "../ui/collapsible";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { CDN_BASE_URL } from "@/lib/utils";
+import { PaginationWithLinks } from "../ui/pagination-with-links";
 
-const MAX_COLS = 4;
+const MAX_COLS = 5;
+const PHOTOS_PER_PAGE = 25;
 
 interface GallerySectionProps{
      photoPaths: string[],
-     albums: string[]
+     albums: string[],
+     params?: {pageSize?: string,page?:string}
 }
-export default function GallerySection({photoPaths, albums}: GallerySectionProps){
+export default function GallerySection({photoPaths, albums, params}: GallerySectionProps){
      const isTablet = useIsMobile("tablet");
      const [isOpen, setIsOpen] = useState(false);
      const [isOpenAlbum, setIsOpenAlbum] = useState(false);
 
-     function getCols(colIndex: number){
-          return photoPaths.filter((_,i)=>i % MAX_COLS === colIndex)
-     }
+     const pageSize = params?.pageSize ? parseInt(params.pageSize) : PHOTOS_PER_PAGE;
+     const pageNum = params?.page ? parseInt(params.page) : 1;
+     const start = useMemo(()=>(pageNum-1) * pageSize,[pageNum,pageSize]);
+     const end = useMemo(()=>start + pageSize,[pageSize,start]);
 
+     const paginatedPhotos = useMemo(() => {
+          return photoPaths.slice(start, end);
+     }, [start, end, photoPaths]);
+
+     function getCols(colIndex: number){
+          return paginatedPhotos.filter((_,i)=>i % MAX_COLS === colIndex)
+     }
      return (
           <section className="bg-background p-8 min-h-screen grid grid-cols-1 lg:grid-cols-(--gallery-grid) gap-5 relative" id="photos">
                <div className={cn(
@@ -77,8 +88,8 @@ export default function GallerySection({photoPaths, albums}: GallerySectionProps
                          </Button>
                     )}
                     {(photoPaths && photoPaths.length>0) && (
-                         <div className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-                              {[getCols(0),getCols(1),getCols(2),getCols(3)].map((cols,i)=>(
+                         <div className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
+                              {[getCols(0),getCols(1),getCols(2),getCols(3),getCols(4)].map((cols,i)=>(
                                    <div key={`col-${i+1}`} className="flex flex-col gap-3">
                                         {cols.map((val,i)=>(
                                              <Image
@@ -93,6 +104,15 @@ export default function GallerySection({photoPaths, albums}: GallerySectionProps
                               ))}
                          </div>
                     )}
+                    <PaginationWithLinks
+                         page={pageNum}
+                         pageSize={pageSize}
+                         totalCount={photoPaths.length}
+                         pageSizeSelectOptions={{
+                              pageSizeSearchParam: "pageSize",
+                              pageSizeOptions: [10,20,50,100,200]
+                         }}
+                    />
                </div>
           </section>
      )

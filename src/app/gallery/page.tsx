@@ -7,9 +7,11 @@ export const metadata: Metadata = {
      title: "Ֆոտո Պատկերասրահ"
 }
 
-export default async function Gallery(){
+export default async function Gallery({searchParams}: {searchParams?: Promise<{pageSize?: string,page?:string}>}){
+     const params = await searchParams;
      const photoPaths = await getPhotoPaths();
-     const albums = await getAlbums()
+     const albums = await getAlbums();
+     
      return (
           <PageLayout>
                <section id="home" className="text-white w-full min-h-screen md:min-h-[64vh] bg-[url('/bg.png')] bg-cover bg-center bg-fixed relative">
@@ -21,6 +23,7 @@ export default async function Gallery(){
                <GallerySection
                     photoPaths={photoPaths}
                     albums={albums}
+                    params={params}
                />
           </PageLayout>
      )
