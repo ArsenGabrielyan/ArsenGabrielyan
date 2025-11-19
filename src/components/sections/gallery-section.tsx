@@ -10,6 +10,7 @@ import { CDN_BASE_URL } from "@/lib/utils";
 import { PaginationWithLinks } from "../ui/pagination-with-links";
 import Link from "next/link";
 import { SiInstagram } from "react-icons/si";
+import Lightbox from "../lightbox";
 
 const MAX_COLS = 5;
 
@@ -24,6 +25,12 @@ export default function GallerySection({photoPaths, albums, pageSize, pageNum}: 
      const [isOpen, setIsOpen] = useState(false);
      const [isOpenAlbum, setIsOpenAlbum] = useState(false);
      const [currAlbum, setCurrAlbum] = useState("");
+     const [lightboxState, setLightboxState] = useState({
+          selectedImage: "",
+          isOpen: false
+     })
+     const changeLightboxState = (overrides: Partial<typeof lightboxState>) =>
+          setLightboxState(prev=>({...prev,...overrides}))
 
      const start = useMemo(()=>(pageNum-1) * pageSize,[pageSize,pageNum]);
      const end = useMemo(()=>start + pageSize,[pageSize,start]);
@@ -40,9 +47,14 @@ export default function GallerySection({photoPaths, albums, pageSize, pageNum}: 
           setIsOpen(false);
           setCurrAlbum(album)
      }
+     const openImage = (img: string) => changeLightboxState({
+          selectedImage: img,
+          isOpen: true
+     })
      const getCols = (colIndex: number) =>
           paginatedPhotos.filter((_,i)=>i % MAX_COLS === colIndex)
      return (
+          <>
           <section className="bg-background p-8 min-h-screen grid grid-cols-1 lg:grid-cols-(--gallery-grid) gap-5 relative" id="photos">
                <div className={cn(
                     "overflow-x-hidden overflow-y-auto w-full fixed z-20 lg:z-0 top-0 lg:top-20 h-full lg:h-[90vh] lg:sticky bg-card/98 lg:bg-transparent p-4 lg:p-0 flex flex-col items-start justify-start gap-3 transition-all",
@@ -93,14 +105,16 @@ export default function GallerySection({photoPaths, albums, pageSize, pageNum}: 
                     {(photoPaths && photoPaths.length>0) && (
                          <div className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
                               {[getCols(0),getCols(1),getCols(2),getCols(3),getCols(4)].map((cols,i)=>(
-                                   <div key={`col-${i+1}`} className="flex flex-col gap-3">
-                                        {cols.map((val,i)=>(
+                                   <div key={`col-${i+1}`} className="flex flex-col gap-3 cursor-pointer">
+                                        {cols.map((val,j)=>(
                                              <Image
-                                                  key={`photo-${i+1}`}
+                                                  onClick={()=>openImage(val)}
+                                                  key={`thumbnails/${val}.webp`}
                                                   src={`${CDN_BASE_URL}/thumbnails/${val}.webp`}
-                                                  alt={`photo-${i+1}`}
+                                                  alt={`photo-${i+1}-${j+1}`}
                                                   width={400}
                                                   height={300}
+                                                  className="object-contain"
                                              />
                                         ))}
                                    </div>
@@ -118,5 +132,12 @@ export default function GallerySection({photoPaths, albums, pageSize, pageNum}: 
                     />
                </div>
           </section>
+          <Lightbox
+               images={photoPaths.map(p=>`${CDN_BASE_URL}/photos/${p}.jpg`)}
+               open={lightboxState.isOpen}
+               startIndex={photoPaths.indexOf(lightboxState.selectedImage)}
+               onClose={()=>changeLightboxState({isOpen: false})}
+          />
+          </>
      )
 }
