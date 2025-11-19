@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
 import { ThemeProvider } from "next-themes";
+import { absoluteURL } from "@/lib/utils";
 
 const Kamar = localFont({
   src: "../fonts/kamar.ttf",
@@ -20,8 +21,9 @@ const Montserrat = localFont({
   variable: "--font-montserrat",
 })
 
-// Todo: Add MetadataBase, Alternates (Languages, Canonical), OpenGraph, and Twitter
+// Todo: Add Alternates (Languages), OpenGraph, and Twitter
 export const metadata: Metadata = {
+  metadataBase: new URL(absoluteURL()),
   title: {
     template: "%s | Արսեն Գ․",
     "absolute": "Արսեն Գ․"
@@ -30,6 +32,9 @@ export const metadata: Metadata = {
   authors: {
     name: "Արսեն Գ.",
     url: "https://github.com/ArsenGabrielyan"
+  },
+  alternates: {
+    canonical: absoluteURL()
   },
   icons: {
     apple: "/app-icon.png",

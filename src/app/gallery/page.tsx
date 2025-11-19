@@ -2,16 +2,33 @@ import PageLayout from "@/components/layout";
 import { Metadata } from "next";
 import GallerySection from "@/components/sections/gallery-section";
 import { getPhotoPaths, getAlbums } from "@/actions/gallery"
+import { cache } from "react";
+import { absoluteURL } from "@/lib/utils";
 
-export const metadata: Metadata = {
-     title: "Ֆոտո Պատկերասրահ"
+const getPhotos = cache(getPhotoPaths)
+const fetchAlbums = cache(getAlbums)
+
+export const generateMetadata = async({searchParams}: {searchParams: Promise<{pageSize?: string,page?:string}>}): Promise<Metadata> => {
+     const {page} = await searchParams;
+     const photoPaths = await getPhotos();
+     const pageNum = page ? parseInt(page) : 1;
+     return {
+          title: "Ֆոտո Պատկերասրահ",
+          pagination: {
+               previous: pageNum > 1 ? absoluteURL(`/gallery?page=${pageNum-1}`) : undefined,
+               next: pageNum < photoPaths.length ? absoluteURL(`/gallery?page=${pageNum+1}`) : undefined
+          },
+          alternates: {
+               canonical: absoluteURL("/gallery")
+          }
+     }
 }
 const PHOTOS_PER_PAGE = 25;
 
-export default async function Gallery({searchParams}: {searchParams?: Promise<{pageSize?: string,page?:string}>}){
+export default async function Gallery({searchParams}: {searchParams: Promise<{pageSize?: string,page?:string}>}){
      const params = await searchParams;
-     const albums = await getAlbums();
-     const photoPaths = await getPhotoPaths();
+     const albums = await fetchAlbums();
+     const photoPaths = await getPhotos();
 
      const pageSize = params?.pageSize ? parseInt(params.pageSize) : PHOTOS_PER_PAGE;
      const pageNum = params?.page ? parseInt(params.page) : 1;

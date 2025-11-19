@@ -137,6 +137,7 @@ export default function GallerySection({photoPaths, albums, pageSize, pageNum}: 
                open={lightboxState.isOpen}
                startIndex={photoPaths.indexOf(lightboxState.selectedImage)}
                onClose={()=>changeLightboxState({isOpen: false})}
+               totalImages={photoPaths.length}
           />
           </>
      )
