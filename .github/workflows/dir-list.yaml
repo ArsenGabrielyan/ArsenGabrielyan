@@ -9,7 +9,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          ref: static resources
+          ref: static-resources
 
       - name: Generate Directory Listings
         uses: jayanta525/github-pages-directory-listing@v4.0.0
@@ -20,7 +20,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3.0.1
         with:
           path: 'data'
-          
+
   deploy:
     needs: pages-directory-listing
     permissions:
