@@ -14,6 +14,7 @@ export const generateMetadata = async({searchParams}: {searchParams: Promise<{pa
      const pageNum = page ? parseInt(page) : 1;
      return {
           title: "Ֆոտո Պատկերասրահ",
+          description: "Լուսանկարներ Արսենից, որը նկարահանել է ճանապարհորդելու ընթացքում:",
           pagination: {
                previous: pageNum > 1 ? absoluteURL(`/gallery?page=${pageNum-1}`) : undefined,
                next: pageNum < photoPaths.length ? absoluteURL(`/gallery?page=${pageNum+1}`) : undefined
