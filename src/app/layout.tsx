@@ -39,6 +39,9 @@ export const metadata: Metadata = {
   icons: {
     apple: "/app-icon.png",
     icon: "/app-icon.png",
+  },
+  verification: {
+    google: "bVrBx7_N7HVVVrC3gk9CwfbykFwxjjIUSM_Je6SEfkE"
   }
 }
 
