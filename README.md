@@ -86,6 +86,26 @@
     <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=progchat-nextjs&count_private=true" />
     <img alt="Next ProgChat" src="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=progchat-nextjs&count_private=true" />
   </picture></a>
+  <a href="https://github.com/ArsenGabrielyan/harts-quiz"><picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=harts-quiz&count_private=true&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=harts-quiz&count_private=true" />
+    <img alt="Next ProgChat" src="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=harts-quiz&count_private=true" />
+  </picture></a>
+  <a href="https://github.com/ArsenGabrielyan/cv-agir"><picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=cv-agir&count_private=true&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=cv-agir&count_private=true" />
+    <img alt="Next ProgChat" src="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=cv-agir&count_private=true" />
+  </picture></a>
+  <a href="https://github.com/ArsenGabrielyan/calm-mood"><picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=calm-mood&count_private=true&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=calm-mood&count_private=true" />
+    <img alt="Next ProgChat" src="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=calm-mood&count_private=true" />
+  </picture></a>
+  <a href="https://github.com/ArsenGabrielyan/ArsenKids"><picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=ArsenKids&count_private=true&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=ArsenKids&count_private=true" />
+    <img alt="Next ProgChat" src="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=ArsenKids&count_private=true" />
+  </picture></a>
 </p>
 
 ---
