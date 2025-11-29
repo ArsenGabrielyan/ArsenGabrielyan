@@ -38,7 +38,10 @@ export const metadata: Metadata = {
   },
   icons: {
     apple: "/app-icon.png",
-    icon: "/app-icon.png",
+    icon: [
+      { url: "/favicon.ico", type: "image/x-icon" },
+      { url: "/app-icon.png", sizes: "192x192", type: "image/png"}
+    ]
   },
   verification: {
     google: "bVrBx7_N7HVVVrC3gk9CwfbykFwxjjIUSM_Je6SEfkE"
