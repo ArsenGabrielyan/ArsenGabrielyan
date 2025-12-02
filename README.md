@@ -63,9 +63,8 @@
 
 ---
 
-### :blue_book: Իմ պրոյեկտները
-
-<p align="left">
+<details>
+    <summary><h3>:blue_book: Իմ պրոյեկտները</h3></summary>
   <a href="https://github.com/ArsenGabrielyan/ng-sample-projects"><picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=ng-sample-projects&count_private=true&theme=dark" />
     <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=ng-sample-projects&count_private=true" />
@@ -106,7 +105,7 @@
     <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=ArsenKids&count_private=true" />
     <img alt="Next ProgChat" src="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=ArsenKids&count_private=true" />
   </picture></a>
-</p>
+</details>
 
 ---
 
