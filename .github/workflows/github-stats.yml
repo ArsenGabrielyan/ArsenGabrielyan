@@ -20,7 +20,6 @@ jobs:
       with:
         image-file: images/stats.svg
         colors: dark-dimmed
-        locale: hy
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
@@ -28,6 +27,23 @@ jobs:
       uses: cicirello/user-statistician@v1
       with:
         image-file: images/stats-light.svg
+        colors: light
+      env:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+    - name: Generate the contributions stats
+      uses: cicirello/user-statistician@v1
+      with:
+        image-file: images/hy/stats.svg
+        colors: dark-dimmed
+        locale: hy
+      env:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+    - name: Generate the contributions stats
+      uses: cicirello/user-statistician@v1
+      with:
+        image-file: images/hy/stats-light.svg
         colors: light
         locale: hy
       env:
