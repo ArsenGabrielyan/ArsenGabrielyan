@@ -63,59 +63,16 @@
 
 ---
 
-<details>
-    <summary><h3>:blue_book: Իմ պրոյեկտները</h3></summary>
-  <a href="https://github.com/ArsenGabrielyan/ng-sample-projects"><picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=ng-sample-projects&count_private=true&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=ng-sample-projects&count_private=true" />
-    <img alt="Angular Samples" src="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=ng-sample-projects&count_private=true" />
-  </picture></a>
-  <a href="https://github.com/ArsenGabrielyan/eshop-project"><picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=eshop-project&count_private=true&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=eshop-project&count_private=true" />
-    <img alt="Eshop-Project" src="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=eshop-project&count_private=true" />
-  </picture></a>
-  <a href="https://github.com/ArsenGabrielyan/coding-blog-nextjs"><picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=coding-blog-nextjs&count_private=true&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=coding-blog-nextjs&count_private=true" />
-    <img alt="Next CodeBlog" src="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=coding-blog-nextjs&count_private=true" />
-  </picture></a>
-  <a href="https://github.com/ArsenGabrielyan/progchat-nextjs"><picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=progchat-nextjs&count_private=true&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=progchat-nextjs&count_private=true" />
-    <img alt="Next ProgChat" src="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=progchat-nextjs&count_private=true" />
-  </picture></a>
-  <a href="https://github.com/ArsenGabrielyan/harts-quiz"><picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=harts-quiz&count_private=true&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=harts-quiz&count_private=true" />
-    <img alt="Next ProgChat" src="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=harts-quiz&count_private=true" />
-  </picture></a>
-  <a href="https://github.com/ArsenGabrielyan/cv-agir"><picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=cv-agir&count_private=true&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=cv-agir&count_private=true" />
-    <img alt="Next ProgChat" src="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=cv-agir&count_private=true" />
-  </picture></a>
-  <a href="https://github.com/ArsenGabrielyan/calm-mood"><picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=calm-mood&count_private=true&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=calm-mood&count_private=true" />
-    <img alt="Next ProgChat" src="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=calm-mood&count_private=true" />
-  </picture></a>
-  <a href="https://github.com/ArsenGabrielyan/ArsenKids"><picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=ArsenKids&count_private=true&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=ArsenKids&count_private=true" />
-    <img alt="Next ProgChat" src="https://github-readme-stats.vercel.app/api/pin/?username=ArsenGabrielyan&repo=ArsenKids&count_private=true" />
-  </picture></a>
-</details>
+<picture>
+      <source media="(prefers-color-scheme: dark)" srcset="images/hy/stats.svg" />
+      <source media="(prefers-color-scheme: light)" srcset="images/hy/stats-light.svg" />
+      <img alt="ArsenGabrielyan's Github Stats" src="images/hy/stats-light.svg" />
+</picture>
 
 ---
 
 <details>
-    <summary><h3>:zap: Վիճակագրություն</h3></summary>
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="images/hy/stats.svg" />
-      <source media="(prefers-color-scheme: light)" srcset="images/hy/stats-light.svg" />
-      <img alt="ArsenGabrielyan's Github Stats" src="images/hy/stats-light.svg" />
-    </picture>
+    <summary><h3>:zap: Այլ Վիճակագրություն</h3></summary>
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://nirzak-streak-stats.vercel.app/?user=ArsenGabrielyan&theme=dark" />
       <source media="(prefers-color-scheme: light)" srcset="https://nirzak-streak-stats.vercel.app/?user=ArsenGabrielyan" />
