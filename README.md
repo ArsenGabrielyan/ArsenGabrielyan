@@ -112,9 +112,9 @@
 <details>
     <summary><h3>:zap: Վիճակագրություն</h3></summary>
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=ArsenGabrielyan&show_icons=true&theme=dark&count_private=true" />
-      <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=ArsenGabrielyan&show_icons=true&count_private=true" />
-      <img alt="ArsenGabrielyan's Github Stats" src="https://github-readme-stats.vercel.app/api?username=ArsenGabrielyan&show_icons=true&count_private=true" />
+      <source media="(prefers-color-scheme: dark)" srcset="images/hy/stats.svg" />
+      <source media="(prefers-color-scheme: light)" srcset="images/hy/stats-light.svg" />
+      <img alt="ArsenGabrielyan's Github Stats" src="images/hy/stats-light.svg" />
     </picture>
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://nirzak-streak-stats.vercel.app/?user=ArsenGabrielyan&theme=dark" />
@@ -125,11 +125,6 @@
       <source media="(prefers-color-scheme: dark)" srcset="https://github-contributor-stats.vercel.app/api?username=ArsenGabrielyan&limit=5&theme=dark&combine_all_yearly_contributions=true" />
       <source media="(prefers-color-scheme: light)" srcset="https://github-contributor-stats.vercel.app/api?username=ArsenGabrielyan&limit=5&combine_all_yearly_contributions=true" />
       <img alt="Github Contributor Stats" src="https://github-contributor-stats.vercel.app/api?username=ArsenGabrielyan&limit=5&combine_all_yearly_contributions=true" />
-    </picture>
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=ArsenGabrielyan&layout=compact&theme=dark&count_private=true" />
-      <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=ArsenGabrielyan&layout=compact&count_private=true" />
-      <img alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArsenGabrielyan&layout=compact&count_private=true" />
     </picture>
 </details>
 
