@@ -11,11 +11,12 @@ on:
 jobs:
   stats:
     runs-on: ubuntu-latest
-      
+    permissions:
+      contents: write
     steps:
     - uses: actions/checkout@v4
 
-    - name: Generate the contributions stats
+    - name: Generate English stats
       uses: cicirello/user-statistician@v1
       with:
         image-file: images/stats.svg
@@ -23,7 +24,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
-    - name: Generate the contributions stats
+    - name: Generate English stats (light)
       uses: cicirello/user-statistician@v1
       with:
         image-file: images/stats-light.svg
@@ -31,7 +32,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
-    - name: Generate the contributions stats
+    - name: Generate Armenian stats
       uses: cicirello/user-statistician@v1
       with:
         image-file: images/hy/stats.svg
@@ -40,7 +41,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
-    - name: Generate the contributions stats
+    - name: Generate Armenian stats (light)
       uses: cicirello/user-statistician@v1
       with:
         image-file: images/hy/stats-light.svg
