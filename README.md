@@ -64,23 +64,23 @@
 ---
 
 <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="images/stats.svg" />
-      <source media="(prefers-color-scheme: light)" srcset="images/stats-light.svg" />
-      <img alt="ArsenGabrielyan's Github Stats" src="images/stats-light.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="images/stats.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="images/stats-light.svg" />
+  <img alt="ArsenGabrielyan's Github Stats" src="images/stats-light.svg" />
 </picture>
 
 <details>
-    <summary><h3>:zap: Այլ Վիճակագրություն</h3></summary>
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://nirzak-streak-stats.vercel.app/?user=ArsenGabrielyan&theme=dark" />
-      <source media="(prefers-color-scheme: light)" srcset="https://nirzak-streak-stats.vercel.app/?user=ArsenGabrielyan" />
-      <img alt="Current Streak" src="https://nirzak-streak-stats.vercel.app/?user=ArsenGabrielyan"/>
-    </picture>
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-contributor-stats.vercel.app/api?username=ArsenGabrielyan&limit=5&theme=dark&combine_all_yearly_contributions=true" />
-      <source media="(prefers-color-scheme: light)" srcset="https://github-contributor-stats.vercel.app/api?username=ArsenGabrielyan&limit=5&combine_all_yearly_contributions=true" />
-      <img alt="Github Contributor Stats" src="https://github-contributor-stats.vercel.app/api?username=ArsenGabrielyan&limit=5&combine_all_yearly_contributions=true" />
-    </picture>
+  <summary><h3>:zap: Այլ Վիճակագրություն</h3></summary>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://nirzak-streak-stats.vercel.app/?user=ArsenGabrielyan&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://nirzak-streak-stats.vercel.app/?user=ArsenGabrielyan" />
+    <img alt="Current Streak" src="https://nirzak-streak-stats.vercel.app/?user=ArsenGabrielyan"/>
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-contributor-stats.vercel.app/api?username=ArsenGabrielyan&limit=5&theme=dark&combine_all_yearly_contributions=true" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-contributor-stats.vercel.app/api?username=ArsenGabrielyan&limit=5&combine_all_yearly_contributions=true" />
+    <img alt="Github Contributor Stats" src="https://github-contributor-stats.vercel.app/api?username=ArsenGabrielyan&limit=5&combine_all_yearly_contributions=true" />
+  </picture>
 </details>
 
 <picture>
