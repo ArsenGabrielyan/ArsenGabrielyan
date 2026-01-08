@@ -56,6 +56,12 @@
 ### :blue_book: Իմ պրոյեկտները
 
 <!-- REPOS-START -->
+- [ArsenKids](https://github.com/ArsenGabrielyan/ArsenKids) - ⭐ 0 - A standalone educational project with exciting games that make learning fun for children of the new generation
+- [calm-mood](https://github.com/ArsenGabrielyan/calm-mood) - ⭐ 1 - A standalone meditation app that helps you calm the human nervous system in case of stress, tension or depression.
+- [cv-agir](https://github.com/ArsenGabrielyan/cv-agir) - ⭐ 1 - Interactive resume generator that has a QR code on each user-generated resume. It's currently in a Demo version
+- [eshop-project](https://github.com/ArsenGabrielyan/eshop-project) - ⭐ 2 - Angular Project - eCommerce Site
+- [harts-quiz](https://github.com/ArsenGabrielyan/harts-quiz) - ⭐ 1 - Online gamified learning platform with user-generated diverse quizzes. It's currently in a Beta version
+- [ng-sample-projects](https://github.com/ArsenGabrielyan/ng-sample-projects) - ⭐ 2 - List of All Sample Angular Projects
 <!-- REPOS-END -->
 
 ---
