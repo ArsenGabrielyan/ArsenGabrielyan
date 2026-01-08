@@ -15,6 +15,8 @@ jobs:
       contents: write
     steps:
     - uses: actions/checkout@v4
+      with:
+        ref: main
 
     - name: Generate English stats
       uses: cicirello/user-statistician@v1
@@ -49,3 +51,11 @@ jobs:
         locale: hy
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+    - name: push stats to the output branch
+      uses: crazy-max/ghaction-github-pages@v3.1.0
+      with:
+        target_branch: output
+        build_dir: dist
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
