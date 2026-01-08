@@ -64,9 +64,9 @@
 ---
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/stats.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="images/stats-light.svg" />
-  <img alt="ArsenGabrielyan's Github Stats" src="images/stats-light.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ArsenGabrielyan/ArsenGabrielyan/output/stats.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ArsenGabrielyan/ArsenGabrielyan/output/stats-light.svg" />
+  <img alt="ArsenGabrielyan's Github Stats" src="https://raw.githubusercontent.com/ArsenGabrielyan/ArsenGabrielyan/output/stats-light.svg" />
 </picture>
 
 <details>
