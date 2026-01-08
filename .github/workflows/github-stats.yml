@@ -16,12 +16,12 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        ref: static-resources
+        ref: stats-output
 
     - name: Generate English stats
       uses: cicirello/user-statistician@v1
       with:
-        image-file: stats/stats.svg
+        image-file: stats.svg
         colors: dark-dimmed
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
@@ -29,7 +29,7 @@ jobs:
     - name: Generate English stats (light)
       uses: cicirello/user-statistician@v1
       with:
-        image-file: stats/stats-light.svg
+        image-file: stats-light.svg
         colors: light
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
@@ -37,7 +37,7 @@ jobs:
     - name: Generate Armenian stats
       uses: cicirello/user-statistician@v1
       with:
-        image-file: stats/hy/stats.svg
+        image-file: hy/stats.svg
         colors: dark-dimmed
         locale: hy
       env:
@@ -46,7 +46,7 @@ jobs:
     - name: Generate Armenian stats (light)
       uses: cicirello/user-statistician@v1
       with:
-        image-file: stats/hy/stats-light.svg
+        image-file: hy/stats-light.svg
         colors: light
         locale: hy
       env:
