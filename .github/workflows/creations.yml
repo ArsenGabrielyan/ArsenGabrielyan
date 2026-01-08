@@ -1,0 +1,22 @@
+name: Generate Portfolio
+on:
+  schedule: # Automatic run
+    - cron: "0 0 * * *" # Runs everyday
+  workflow_dispatch: # Manual run from GitHub Actions Workflow page directly
+permissions:
+  contents: write # Permission to write the generated contents
+
+jobs:
+  update-portfolio:
+    name: Update profile with recent repositories
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch portfolio from Github API
+        uses: ArsenTech/creations-stats-workflow@v1.0.2
+        with:
+          github-username: ${{ github.repository_owner }}
+          exclusions: progchat-nextjs,coding-blog-nextjs,webDevPractics,ArsenGabrielyan 
+          commit-message: "Updated Portfolio stats with recent repository data"
