@@ -18,5 +18,5 @@ jobs:
         uses: ArsenTech/creations-stats-workflow@v1.0.2
         with:
           github-username: ${{ github.repository_owner }}
-          exclusions: progchat-nextjs,coding-blog-nextjs,webDevPractics,ArsenGabrielyan 
-          commit-message: "Updated Portfolio stats with recent repository data"
+          exclusions: progchat-nextjs,coding-blog-nextjs,webDevPractics,ArsenGabrielyan,cv-agir
+          commit-message: "Updated Portfolio stats with recent repository data."
