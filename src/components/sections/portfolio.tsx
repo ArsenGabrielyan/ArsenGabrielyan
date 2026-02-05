@@ -25,7 +25,7 @@ const portfolioItems: IPortfolioItem[] = [
      },
      {
           image: "/logos/cv-agir.png",
-          name: "CV-ագիր (Դեմո տարբերակ)",
+          name: "CV-ագիր",
           description: "Ինտերակտիվ ռեզյումեի գեներատոր, որն ունի QR կոդ յուրաքանչյուր օգտատիրոջ կողմից ստեղծված ռեզյումեի վրա",
           url: "https://cv-agir.vercel.app",
           githubUrl: "https://github.com/ArsenGabrielyan/cv-agir",
