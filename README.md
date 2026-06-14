@@ -44,8 +44,8 @@
 ### :zap: Ակտիվություն
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#2](https://github.com/ArsenGabrielyan/harts-quiz/pull/2) in [ArsenGabrielyan/harts-quiz](https://github.com/ArsenGabrielyan/harts-quiz)
-2. 💪 Opened PR [#2](https://github.com/ArsenGabrielyan/harts-quiz/pull/2) in [ArsenGabrielyan/harts-quiz](https://github.com/ArsenGabrielyan/harts-quiz)
+1. 🚀 Published release [Calm Mood Desktop v0.2.0](https://github.com/ArsenGabrielyan/calm-mood-desktop/releases/tag/v0.2.0) in [ArsenGabrielyan/calm-mood-desktop](https://github.com/ArsenGabrielyan/calm-mood-desktop)
+2. 🚀 Published release [Calm Mood Desktop v0.1.0](https://github.com/ArsenGabrielyan/calm-mood-desktop/releases/tag/v0.1.0) in [ArsenGabrielyan/calm-mood-desktop](https://github.com/ArsenGabrielyan/calm-mood-desktop)
 3. 🎉 Merged PR [#5](https://github.com/ArsenGabrielyan/loginproject/pull/5) in [ArsenGabrielyan/loginproject](https://github.com/ArsenGabrielyan/loginproject)
 4. 💪 Opened PR [#5](https://github.com/ArsenGabrielyan/loginproject/pull/5) in [ArsenGabrielyan/loginproject](https://github.com/ArsenGabrielyan/loginproject)
 5. 🎉 Merged PR [#7](https://github.com/ArsenGabrielyan/webDevPractics/pull/7) in [ArsenGabrielyan/webDevPractics](https://github.com/ArsenGabrielyan/webDevPractics)
