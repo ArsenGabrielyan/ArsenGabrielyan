@@ -44,7 +44,7 @@
 ### :zap: Ակտիվություն
 
 <!--START_SECTION:activity-->
-1. 🚀 Published release [Calm Mood Desktop v0.3.0](https://github.com/ArsenGabrielyan/calm-mood-desktop/releases/tag/v0.3.0) in [ArsenGabrielyan/calm-mood-desktop](https://github.com/ArsenGabrielyan/calm-mood-desktop)
+1. 🚀 Published release [Calm Mood Desktop v0.4.2](https://github.com/ArsenGabrielyan/calm-mood-desktop/releases/tag/v0.4.2) in [ArsenGabrielyan/calm-mood-desktop](https://github.com/ArsenGabrielyan/calm-mood-desktop)
 2. 🚀 Published release [Calm Mood Desktop v0.2.1](https://github.com/ArsenGabrielyan/calm-mood-desktop/releases/tag/v0.2.1) in [ArsenGabrielyan/calm-mood-desktop](https://github.com/ArsenGabrielyan/calm-mood-desktop)
 3. 🚀 Published release [Calm Mood Desktop v0.2.0](https://github.com/ArsenGabrielyan/calm-mood-desktop/releases/tag/v0.2.0) in [ArsenGabrielyan/calm-mood-desktop](https://github.com/ArsenGabrielyan/calm-mood-desktop)
 4. 🚀 Published release [Calm Mood Desktop v0.1.0](https://github.com/ArsenGabrielyan/calm-mood-desktop/releases/tag/v0.1.0) in [ArsenGabrielyan/calm-mood-desktop](https://github.com/ArsenGabrielyan/calm-mood-desktop)
