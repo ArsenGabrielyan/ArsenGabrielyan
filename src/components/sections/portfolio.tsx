@@ -2,7 +2,7 @@
 import SiteSection from "../site-section"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel"
 import { IPortfolioItem, PortfolioItemType } from "@/lib/types"
-import PortfolioItem from "../portfolio-item"
+import PortfolioItem from "../items/portfolio"
 import { useIsMobile } from "@/hooks/use-mobile"
 import { useMemo } from "react"
 import { useTranslations } from "next-intl"

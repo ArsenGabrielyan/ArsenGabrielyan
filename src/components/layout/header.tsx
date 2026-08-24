@@ -9,6 +9,7 @@ import ThemeSwitcher from "../theme-changer";
 import LanguageSwitcher from "../lang-switcher";
 import { useTranslations } from "next-intl";
 import { LINKS } from "@/lib/constants";
+import HeaderLink from "../items/header-link";
 
 export default function SiteHeader(){
      const isMobile = useIsMobile();
@@ -32,16 +33,12 @@ export default function SiteHeader(){
                )}>{t("title")}</Link>
                <ul className={cn("block md:flex justify-center items-center gap-6 bg-background md:bg-transparent absolute md:static top-16 left-0 w-full md:w-fit h-screen md:h-fit text-center md:text-left overflow-auto md:overflow-hidden space-y-2 md:space-y-0",isOpen ? "visible opacity-100 pt-5 md:pt-0" : "hidden md:visible opacity-0 md:opacity-100 pt-0")}>
                     {LINKS.map(link=>(
-                         <li key={`link-${link.url.replace(/#|\//g,"")}`} className="relative">
-                              <Link
-                                   href={`${link.url}`}
-                                   className={cn(
-                                        "tracking-[1.25px] font-regular transition-all hover:text-primary text-lg",
-                                        isSticky ? "text-foreground" : "text-foreground md:text-white"
-                                   )}
-                                   onClick={()=>setIsOpen(false)}
-                              >{t(`header-links.${link.name}`)}</Link>
-                         </li>
+                         <HeaderLink
+                              key={`link-${link.url.replace(/#|\//g,"")}`}
+                              link={link}
+                              isSticky={isSticky}
+                              setIsOpen={setIsOpen}
+                         />
                     ))}
                </ul>
                <div className="flex items-center gap-2 flex-row-reverse">

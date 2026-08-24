@@ -40,7 +40,7 @@ export default function Lightbox({images, startIndex, open, onClose, totalImages
 
      return (
      <Dialog open={open} onOpenChange={onClose}>
-          <DialogContent className="py-3 md:py-6 px-3 md:px-6 flex justify-center items-center bg-background/75 backdrop-blur-md flex-col md:flex-row w-full max-w-7xl max-h-[900px]" showCloseButton={false}>
+          <DialogContent className="py-3 md:py-6 px-3 md:px-6 flex justify-center items-center bg-background/75 backdrop-blur-md flex-col md:flex-row w-full max-w-7xl max-h-225" showCloseButton={false}>
                <Button onClick={onClose} variant="secondary" size="icon" className="absolute top-2 right-2">
                     <X className="size-5"/>
                </Button>
@@ -53,7 +53,7 @@ export default function Lightbox({images, startIndex, open, onClose, totalImages
                          <ChevronLeft className="size-6" />
                     </Button>
                )}
-               <div className="flex flex-col items-center justify-center h-full w-full gap-4 max-w-7xl max-h-[750px]">
+               <div className="flex flex-col items-center justify-center h-full w-full gap-4 max-w-7xl max-h-187.5">
                     <Image
                          src={images[index]}
                          alt=""
