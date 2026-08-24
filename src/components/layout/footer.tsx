@@ -1,13 +1,16 @@
-import Link from "next/link";
+"use client"
+import { Link } from "@/i18n/navigation";
 import { Button } from "../ui/button";
 import { ButtonGroup } from "../ui/button-group";
 import { SiGithub, SiInstagram, SiYoutube } from "react-icons/si";
+import { useTranslations } from "next-intl";
 
 export default function SiteFooter(){
      const year = new Date().getFullYear();
+     const t = useTranslations("index")
      return (
           <footer className="py-3 px-5 flex justify-between items-center gap-2 flex-col md:flex-row border-t">
-               <p className="text-center md:text-left text-base">&copy; {year} | Բոլոր իրավունքները պաշտպանված են</p>
+               <p className="text-center md:text-left text-base">&copy; {year} | {t("all-rights-reserved")}</p>
                <ButtonGroup>
                     <Button variant="ghost" className="text-primary hover:text-foreground" size="icon" asChild>
                          <Link href="https://github.com/ArsenGabrielyan">

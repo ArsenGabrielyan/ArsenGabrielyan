@@ -17,8 +17,9 @@ import {
   SelectTrigger,
   SelectValue,
 } from './select';
-import { usePathname, useRouter, useSearchParams } from 'next/navigation';
+import { useSearchParams } from 'next/navigation';
 import { cn } from '@/lib/utils';
+import { usePathname, useRouter } from "@/i18n/navigation"
 
 export interface PaginationWithLinksProps {
   pageSizeSelectOptions?: {

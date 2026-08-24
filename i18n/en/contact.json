@@ -1,0 +1,48 @@
+{
+     "contact": {
+          "fields": {
+               "email": "Email",
+               "full-name": {
+                    "label": "Full Name",
+                    "placeholder": "Poghos Petrosyan"
+               },
+               "message": {
+                    "label": "Message",
+                    "placeholder": "Write the message here"
+               },
+               "subject": {
+                    "label": "Subject",
+                    "placeholder": "Write the subject name"
+               }
+          },
+          "messages": {
+               "error": "Failed to send the message",
+               "invalid-fields": "All fields are not validated",
+               "misc-error": "Oops, Something went wrong!",
+               "success": "Message sent successfully"
+          },
+          "send": {
+               "loading": "Sending...",
+               "original": "Send"
+          },
+          "title": "Send message",
+          "validation": {
+               "email": {
+                    "invalid": "Please enter the valid email address",
+                    "too-long": "Email is too long"
+               },
+               "message": {
+                    "too-long": "The message is too long",
+                    "too-short": "The message should be at least 5 characters"
+               },
+               "name": {
+                    "too-long": "The full name is too long",
+                    "too-short": "The full name is too short"
+               },
+               "subject": {
+                    "required": "Please enter the subject name",
+                    "too-long": "Subject is too long"
+               }
+          }
+     }
+}

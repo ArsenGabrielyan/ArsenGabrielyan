@@ -8,11 +8,11 @@ import { cn, formatAlbumName } from "@/lib/utils";
 import Image from "next/image";
 import { CDN_BASE_URL } from "@/lib/utils";
 import { PaginationWithLinks } from "../ui/pagination-with-links";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { SiInstagram } from "react-icons/si";
 import Lightbox from "../lightbox";
-
-const MAX_COLS = 5;
+import { useTranslations } from "next-intl";
+import { MAX_COLS } from "@/lib/constants";
 
 interface GallerySectionProps{
      photoPaths: string[],
@@ -29,6 +29,7 @@ export default function GallerySection({photoPaths, albums, pageSize, pageNum}: 
           selectedImage: "",
           isOpen: false
      })
+     const t = useTranslations("gallery")
      const changeLightboxState = (overrides: Partial<typeof lightboxState>) =>
           setLightboxState(prev=>({...prev,...overrides}))
 
@@ -51,8 +52,7 @@ export default function GallerySection({photoPaths, albums, pageSize, pageNum}: 
           selectedImage: img,
           isOpen: true
      })
-     const getCols = (colIndex: number) =>
-          paginatedPhotos.filter((_,i)=>i % MAX_COLS === colIndex)
+     const getCols = (colIndex: number) => paginatedPhotos.filter((_,i)=>i % MAX_COLS === colIndex)
      return (
           <>
           <section className="bg-background p-8 min-h-screen grid grid-cols-1 lg:grid-cols-(--gallery-grid) gap-5 relative" id="photos">
@@ -67,18 +67,18 @@ export default function GallerySection({photoPaths, albums, pageSize, pageNum}: 
                     )}
                     <Button variant="ghost" onClick={()=>changeAlbum("")}>
                          <ImageIcon />
-                         Պատկերասրահ
+                         {t("gallery-btn")}
                     </Button>
                     <Collapsible open={isOpenAlbum} onOpenChange={setIsOpenAlbum} className="flex flex-col gap-2 w-full">
                          <div className="flex items-center justify-between gap-4 px-3 w-full">
                               <p className="flex items-center gap-2 text-sm">
                                    {isOpenAlbum ? <FolderOpen className="size-4"/> : <FolderClosed className="size-4"/>}
-                                   Ալբոմներ
+                                   {t("albums")}
                               </p>
                               <CollapsibleTrigger asChild>
                                    <Button variant="ghost" size="icon" className="size-8">
                                         {isOpenAlbum ? <ChevronUp/> : <ChevronDown/>}
-                                        <span className="sr-only">Բացել / Փակել</span>
+                                        <span className="sr-only">{t("toggle")}</span>
                                    </Button>
                               </CollapsibleTrigger>
                          </div>

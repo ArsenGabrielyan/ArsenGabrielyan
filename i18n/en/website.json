@@ -1,0 +1,72 @@
+{
+  "about": {
+    "languages": "Languages: Armenian (Native), English (Fluent), Russian (Fluent)",
+    "learn-more": "Learn More",
+    "text": "I'm interested in programming, photography, and other hobbies (e.g. traveling, video editing, doing the occasional science experiment). This is my personal website :-)",
+    "title": "About me"
+  },
+  "achievements": {
+    "desc": "My achievements and the progress I have made",
+    "suffix": {
+      "experiments": "Scientific Experiments",
+      "photos": "Photos",
+      "projects": "Projects"
+    },
+    "title": "My achievements"
+  },
+  "gallery": {
+    "albums": "Albums",
+    "desc": "Photos from Arsen, taken while traveling.",
+    "gallery-btn": "Gallery",
+    "title": {
+      "formatted": "Photo <blue>Gallery</blue>",
+      "original": "Photo Gallery"
+    },
+    "toggle": "Toggle menu"
+  },
+  "hero-section": {
+    "sub-title": "Frontend Developer",
+    "title": "Arsen <blue>G.</blue>"
+  },
+  "index": {
+    "all-rights-reserved": "All Rights Reserved",
+    "description": "Personal website of Arsen G.",
+    "header-links": {
+      "about": "About",
+      "contact": "Contact",
+      "gallery": "Gallery",
+      "home": "Home",
+      "portfolio": "Portfolio",
+      "services": "Services"
+    },
+    "lang-switcher-label": "Change Language",
+    "menu": "Menu",
+    "theme": {
+      "dark": "Dark theme",
+      "default": "Default theme",
+      "light": "Light theme"
+    },
+    "title": "Arsen G."
+  },
+  "services": {
+    "desc": "I mainly do the following things:",
+    "hobbies": {
+      "coding": {
+        "desc": "I mainly work on FrontEnd and Full Stack programming (React.JS, Next JS, Typescript, HTML/CSS, Javascript, PostgreSQL, Prisma ORM).",
+        "link-text": "All Projects",
+        "title": "Programming"
+      },
+      "photo": {
+        "desc": "I occasionally take photos while traveling.",
+        "link-text": "View photos",
+        "title": "Photography"
+      },
+      "science": {
+        "desc": "I also do scientific experiments in my free time.",
+        "link-text": "Learn more",
+        "title": "Scientific Experiments"
+      }
+    },
+    "title": "What I'm currently doing?"
+  }
+}

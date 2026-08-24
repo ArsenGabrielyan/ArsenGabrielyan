@@ -1,6 +1,6 @@
 import { Item, ItemActions, ItemContent, ItemDescription, ItemHeader, ItemMedia, ItemTitle } from "./ui/item"
 import { IPortfolioItem } from "@/lib/types"
-import Link from "next/link"
+import { Link } from "@/i18n/navigation"
 import Image from "next/image"
 import { ButtonGroup, ButtonGroupSeparator } from "./ui/button-group"
 import { Button } from "./ui/button"
@@ -8,6 +8,7 @@ import { SiGithub } from "react-icons/si"
 import { ExternalLink } from "lucide-react"
 import { useMemo } from "react"
 import { cn } from "@/lib/utils"
+import { useTranslations } from "next-intl"
 
 interface PortfolioItemProps{
      data: IPortfolioItem,
@@ -16,6 +17,8 @@ interface PortfolioItemProps{
 }
 export default function PortfolioItem({data, isMobile, className}: PortfolioItemProps){
      const textAlign = useMemo(()=>isMobile ? "text-center" : "text-left",[isMobile])
+     const t = useTranslations(`portfolio.projects.${data.item}`)
+     const btnTxt = useTranslations("portfolio.buttons")
      return (
           <Item className={cn(textAlign,className)}>
                {!!data.image && (
@@ -42,19 +45,19 @@ export default function PortfolioItem({data, isMobile, className}: PortfolioItem
                     )
                )}
                <ItemContent>
-                    <ItemTitle className={textAlign}>{data.name}</ItemTitle>
-                    <ItemDescription>{data.description}</ItemDescription>
+                    <ItemTitle className={textAlign}>{t("title")}</ItemTitle>
+                    <ItemDescription>{t("desc")}</ItemDescription>
                     {isMobile && (
                          <div className="w-full mt-2">
                               {(!!data.githubUrl && data.type==="project") ? (
                                    <ButtonGroup className="w-full">
-                                        <Button className="flex-1" title="Դիտել Github-ում" asChild>
+                                        <Button className="flex-1" title={btnTxt("view-github")} asChild>
                                              <Link href={data.githubUrl}>
                                                   <SiGithub/>
                                              </Link>
                                         </Button>
                                         <ButtonGroupSeparator/>
-                                        <Button className="flex-1" title="Այցելել" asChild variant="primary">
+                                        <Button className="flex-1" title={btnTxt("visit")} asChild variant="primary">
                                              <Link href={data.url}>
                                                   <ExternalLink/>
                                              </Link>
@@ -63,7 +66,7 @@ export default function PortfolioItem({data, isMobile, className}: PortfolioItem
                               ) : (
                                    <Button asChild className="w-full" variant="primary">
                                         <Link href={data.url}>
-                                             <ExternalLink/> Այցելել
+                                             <ExternalLink/> {btnTxt("visit")}
                                         </Link>
                                    </Button>
                               )}
@@ -74,13 +77,13 @@ export default function PortfolioItem({data, isMobile, className}: PortfolioItem
                     <ItemActions>
                          {(!!data.githubUrl && data.type==="project") ? (
                               <ButtonGroup>
-                                   <Button size="icon" title="Դիտել Github-ում" asChild>
+                                   <Button size="icon" title={btnTxt("view-github")} asChild>
                                         <Link href={data.githubUrl}>
                                              <SiGithub/>
                                         </Link>
                                    </Button>
                                    <ButtonGroupSeparator/>
-                                   <Button size="icon" title="Այցելել" asChild variant="primary">
+                                   <Button size="icon" title={btnTxt("visit")} asChild variant="primary">
                                         <Link href={data.url}>
                                              <ExternalLink/>
                                         </Link>
@@ -89,7 +92,7 @@ export default function PortfolioItem({data, isMobile, className}: PortfolioItem
                          ) : (
                               <Button asChild variant="primary">
                                    <Link href={data.url}>
-                                        <ExternalLink/> Այցելել
+                                        <ExternalLink/> {btnTxt("visit")}
                                    </Link>
                               </Button>
                          )}

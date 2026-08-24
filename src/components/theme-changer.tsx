@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem } from "@/components/ui/dropdown-menu";
 import { Item, ItemContent, ItemMedia, ItemTitle } from "@/components/ui/item";
 import { Monitor, Moon, Sun } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 
@@ -12,6 +13,7 @@ interface ThemeSwitcherProps{
 export default function ThemeSwitcher({isSticky}: ThemeSwitcherProps){
      const { theme, setTheme, resolvedTheme } = useTheme()
      const [mounted, setMounted] = useState(false)
+     const t = useTranslations("index.theme")
 
      useEffect(() => {
           const id = requestAnimationFrame(() => setMounted(true))
@@ -40,7 +42,7 @@ export default function ThemeSwitcher({isSticky}: ThemeSwitcherProps){
                                    <Monitor/>
                               </ItemMedia>
                               <ItemContent className="gap-0.5">
-                                   <ItemTitle>Լռելյայն տեսք</ItemTitle>
+                                   <ItemTitle>{t("default")}</ItemTitle>
                               </ItemContent>
                          </Item>
                     </DropdownMenuItem>
@@ -50,7 +52,7 @@ export default function ThemeSwitcher({isSticky}: ThemeSwitcherProps){
                                    <Sun/>
                               </ItemMedia>
                               <ItemContent className="gap-0.5">
-                                   <ItemTitle>Բաց տեսք</ItemTitle>
+                                   <ItemTitle>{t("light")}</ItemTitle>
                               </ItemContent>
                          </Item>
                     </DropdownMenuItem>
@@ -60,7 +62,7 @@ export default function ThemeSwitcher({isSticky}: ThemeSwitcherProps){
                                    <Moon/>
                               </ItemMedia>
                               <ItemContent className="gap-0.5">
-                                   <ItemTitle>Մուգ տեսք</ItemTitle>
+                                   <ItemTitle>{t("dark")}</ItemTitle>
                               </ItemContent>
                          </Item>
                     </DropdownMenuItem>

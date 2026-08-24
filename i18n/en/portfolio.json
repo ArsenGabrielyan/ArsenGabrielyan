@@ -1,0 +1,44 @@
+{
+     "portfolio": {
+          "buttons": {
+               "view-github": "View on GitHub",
+               "visit": "Visit"
+          },
+          "desc": "Here you will see my projects, videos, and other creations.",
+          "projects": {
+               "animations": {
+                    "desc": "Interesting cartoons for everyone. I made these cartoons when I was a kid.",
+                    "title": "Animations"
+               },
+               "arsenkids": {
+                    "desc": "A standalone educational project with engaging games that make learning fun for a new generation of children",
+                    "title": "ArsenKids"
+               },
+               "calm-mood": {
+                    "desc": "An app that helps you calm the human nervous system in case of stress, tension, or depression with the help of nature environments.",
+                    "title": "Calm Mood"
+               },
+               "cv-agir": {
+                    "desc": "Interactive resume generator that has a QR code on each user-generated resume",
+                    "title": "CV-agir"
+               },
+               "harts": {
+                    "desc": "Online gamified learning platform with user-generated quizzes",
+                    "title": "Harts (beta version)"
+               },
+               "photo-by-arsen": {
+                    "desc": "Photos I took while traveling.",
+                    "title": "Photo By Arsen"
+               },
+               "scientific-crafts": {
+                    "desc": "Look and Study About Science, Physics, and Chemistry.",
+                    "title": "Scientific crafts"
+               }
+          },
+          "title": "Portfolio",
+          "types": {
+               "other": "All creations",
+               "project": "Projects"
+          }
+     }
+}
