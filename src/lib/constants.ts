@@ -36,13 +36,9 @@ export const PORTFOLIO_ITEMS: IPortfolioItem[] = [
           type: "other"
      },
      {
+          image: "/logos/scientific-crafts.png",
           item: PortfolioItems.ScientificCrafts,
           url: "https://www.youtube.com/playlist?list=PLSI6KSDJfq-J6OxBprsyMjWmmLym2o7T3",
-          type: "other"
-     },
-     {
-          item: PortfolioItems.Animations,
-          url: "https://www.youtube.com/playlist?list=PLSI6KSDJfq-IcQ4ld9W1m_f8hnJTNe7gJ",
           type: "other"
      },
      {
@@ -51,7 +47,12 @@ export const PORTFOLIO_ITEMS: IPortfolioItem[] = [
           githubUrl: "https://github.com/ArsenGabrielyan/harts-quiz",
           url: "https://harts-quiz.onrender.com/",
           type: "project"
-     }
+     },
+     {
+          item: PortfolioItems.Animations,
+          url: "https://www.youtube.com/playlist?list=PLSI6KSDJfq-IcQ4ld9W1m_f8hnJTNe7gJ",
+          type: "other"
+     },
 ]
 export const SERVICES: IService[] = [
      {
