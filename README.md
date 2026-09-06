@@ -1,4 +1,4 @@
-# CDN For a Persnal site
+# CDN for a Personal site
 
 This branch (`static-resources`) is used exclusively for hosting public assets via **GitHub Pages**, including:
 - Photos
@@ -11,7 +11,7 @@ This branch (`static-resources`) is used exclusively for hosting public assets v
 ## CDN Usage
 All files in this branch are served via **GitHub Pages** at https://arsengabrielyan.github.io/ArsenGabrielyan/
 
-You can use these URLs directly in everywhere :-)
+You can use these URLs directly everywhere :-)
 
 > [!NOTE]  
 > - Make sure to credit Arsen G. by pasting **"Photo by Arsen G."** when using photos.
