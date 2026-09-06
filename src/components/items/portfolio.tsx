@@ -20,7 +20,7 @@ export default function PortfolioItem({data, isMobile, className}: PortfolioItem
      const t = useTranslations(`portfolio.projects.${data.item}`)
      const btnTxt = useTranslations("portfolio.buttons")
      return (
-          <Item className={cn(textAlign,className)}>
+          <Item className={cn(textAlign,className)} variant="muted">
                {!!data.image && (
                     isMobile ? (
                          <ItemHeader>
@@ -33,7 +33,7 @@ export default function PortfolioItem({data, isMobile, className}: PortfolioItem
                               />
                          </ItemHeader>
                     ) : (
-                         <ItemMedia variant="image" className="size-20">
+                         <ItemMedia variant="image" className="size-21">
                               <Image
                                    src={data.image}
                                    alt="item-image"
