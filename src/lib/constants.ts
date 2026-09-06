@@ -23,6 +23,13 @@ export const PORTFOLIO_ITEMS: IPortfolioItem[] = [
           type: "project"
      },
      {
+          image: "/logos/scientific-crafts.png",
+          item: PortfolioItems.ScientificCrafts,
+          url: "https://www.youtube.com/playlist?list=PLSI6KSDJfq-J6OxBprsyMjWmmLym2o7T3",
+          githubUrl: "https://github.com/ArsenGabrielyan/scientific-crafts",
+          type: "project"
+     },
+     {
           image: "/logos/cv-agir.png",
           item: PortfolioItems.CvAgir,
           url: "https://cv-agir.vercel.app",
@@ -30,23 +37,17 @@ export const PORTFOLIO_ITEMS: IPortfolioItem[] = [
           type: "project"
      },
      {
-          image: "/logos/photo-by-arsen.png",
-          item: PortfolioItems.PhotoByArsen,
-          url: "https://www.instagram.com/arsen_photo.6973/",
-          type: "other"
-     },
-     {
-          image: "/logos/scientific-crafts.png",
-          item: PortfolioItems.ScientificCrafts,
-          url: "https://www.youtube.com/playlist?list=PLSI6KSDJfq-J6OxBprsyMjWmmLym2o7T3",
-          type: "other"
-     },
-     {
           image: "/logos/harts.png",
           item: PortfolioItems.HartsQuiz,
           githubUrl: "https://github.com/ArsenGabrielyan/harts-quiz",
           url: "https://harts-quiz.onrender.com/",
           type: "project"
+     },
+     {
+          image: "/logos/photo-by-arsen.png",
+          item: PortfolioItems.PhotoByArsen,
+          url: "https://www.instagram.com/arsen_photo.6973/",
+          type: "other"
      },
      {
           item: PortfolioItems.Animations,
