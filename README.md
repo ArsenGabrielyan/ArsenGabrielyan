@@ -61,6 +61,7 @@
 - [calm-mood-desktop](https://github.com/ArsenGabrielyan/calm-mood-desktop) - ⭐ 1 - 🌿 A standalone wellness desktop app that helps you calm the human nervous system in case of stress, tension or depression.
 - [cv-agir-community](https://github.com/ArsenGabrielyan/cv-agir-community) - ⭐ 2 - 📄 Interactive resume generator that has a QR code on each user-generated resume
 - [harts-quiz](https://github.com/ArsenGabrielyan/harts-quiz) - ⭐ 1 - ⚡ Online gamified learning platform with user-generated diverse quizzes. It's currently in a Beta version
+- [scientific-crafts](https://github.com/ArsenGabrielyan/scientific-crafts) - ⭐ 0 - 🧪 A standalone science project featuring exciting experiments and templates that make physics, chemistry, STEM, and science more engaging.
 <!-- REPOS-END -->
 
 ---
