@@ -25,7 +25,7 @@ export const PORTFOLIO_ITEMS: IPortfolioItem[] = [
      {
           image: "/logos/scientific-crafts.png",
           item: PortfolioItems.ScientificCrafts,
-          url: "https://www.youtube.com/playlist?list=PLSI6KSDJfq-J6OxBprsyMjWmmLym2o7T3",
+          url: "https://gitafizika.vercel.app",
           githubUrl: "https://github.com/ArsenGabrielyan/scientific-crafts",
           type: "project"
      },
