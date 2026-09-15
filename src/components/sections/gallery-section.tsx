@@ -5,14 +5,13 @@ import { ChevronDown, ChevronUp, ImageIcon, Menu, X, FolderOpen, FolderClosed } 
 import { useMemo, useState } from "react";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "../ui/collapsible";
 import { cn, formatAlbumName } from "@/lib/utils";
-import Image from "next/image";
 import { CDN_BASE_URL } from "@/lib/utils";
 import { PaginationWithLinks } from "../ui/pagination-with-links";
 import { Link } from "@/i18n/navigation";
 import { SiInstagram } from "react-icons/si";
 import Lightbox from "../lightbox";
 import { useTranslations } from "next-intl";
-import { MAX_COLS } from "@/lib/constants";
+import PhotosList from "../lists/photos";
 
 interface GallerySectionProps{
      photoPaths: string[],
@@ -52,7 +51,6 @@ export default function GallerySection({photoPaths, albums, pageSize, pageNum}: 
           selectedImage: img,
           isOpen: true
      })
-     const getCols = (colIndex: number) => paginatedPhotos.filter((_,i)=>i % MAX_COLS === colIndex)
      return (
           <>
           <section className="bg-background p-8 min-h-screen grid grid-cols-1 lg:grid-cols-(--gallery-grid) gap-5 relative" id="photos">
@@ -102,25 +100,11 @@ export default function GallerySection({photoPaths, albums, pageSize, pageNum}: 
                               <Menu/>
                          </Button>
                     )}
-                    {(photoPaths && photoPaths.length>0) && (
-                         <div className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
-                              {[getCols(0),getCols(1),getCols(2),getCols(3),getCols(4)].map((cols,i)=>(
-                                   <div key={`col-${i+1}`} className="flex flex-col gap-3 cursor-pointer">
-                                        {cols.map((val,j)=>(
-                                             <Image
-                                                  onClick={()=>openImage(val)}
-                                                  key={`thumbnails/${val}.webp`}
-                                                  src={`${CDN_BASE_URL}/thumbnails/${val}.webp`}
-                                                  alt={`photo-${i+1}-${j+1}`}
-                                                  width={400}
-                                                  height={300}
-                                                  className="object-contain"
-                                             />
-                                        ))}
-                                   </div>
-                              ))}
-                         </div>
-                    )}
+                    <PhotosList
+                         data={paginatedPhotos}
+                         photoPaths={photoPaths}
+                         onOpenImage={openImage}
+                    />
                     <PaginationWithLinks
                          page={pageNum}
                          pageSize={pageSize}

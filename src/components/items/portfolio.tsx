@@ -8,7 +8,7 @@ import { SiGithub } from "react-icons/si"
 import { ExternalLink } from "lucide-react"
 import { useMemo } from "react"
 import { cn } from "@/lib/utils"
-import { useTranslations } from "next-intl"
+import { useLocale, useTranslations } from "next-intl"
 
 interface PortfolioItemProps{
      data: IPortfolioItem,
@@ -17,7 +17,7 @@ interface PortfolioItemProps{
 }
 export default function PortfolioItem({data, isMobile, className}: PortfolioItemProps){
      const textAlign = useMemo(()=>isMobile ? "text-center" : "text-left",[isMobile])
-     const t = useTranslations(`portfolio.projects.${data.item}`)
+     const locale = useLocale()
      const btnTxt = useTranslations("portfolio.buttons")
      return (
           <Item className={cn(textAlign,className)} variant="muted">
@@ -45,8 +45,8 @@ export default function PortfolioItem({data, isMobile, className}: PortfolioItem
                     )
                )}
                <ItemContent>
-                    <ItemTitle className={textAlign}>{t("title")}</ItemTitle>
-                    <ItemDescription>{t("desc")}</ItemDescription>
+                    <ItemTitle className={textAlign}>{data.title[locale]}</ItemTitle>
+                    <ItemDescription>{data.description[locale]}</ItemDescription>
                     {isMobile && (
                          <div className="w-full mt-2">
                               {(!!data.githubUrl && data.type==="project") ? (

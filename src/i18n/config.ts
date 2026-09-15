@@ -10,19 +10,17 @@ export const defaultLocale: LangCodeType = "hy";
 
 export const messages = [
      "website",
-     "portfolio",
      "contact"
 ] as const
 
 export async function loadMessages(locale: LangCodeType): Promise<MessageSchema>{
-     const [website, portfolio, contact] = await Promise.all(
+     const [website, contact] = await Promise.all(
           messages.map(msg=>
                import(`../../i18n/${locale}/${msg}.json`).then(m=>m.default)
           )
      );
      return {
           ...website,
-          ...portfolio,
           ...contact
      }
 }

@@ -4,13 +4,13 @@ import { CDN_BASE_URL } from "@/lib/utils";
 export const getPhotoPaths = async()=>{
      const albums = await getAlbums();
      const albumFetches = albums.map(album =>
-     fetch(`${CDN_BASE_URL}/thumbnails/${album}`)
-          .then(res => res.ok ? res.text() : "")
-          .then(html =>
-               [...html.matchAll(/href="([^"]+\.(jpg|jpeg|png|webp))"/gi)]
-                    .map(m => `${album}/${m[1]}`.replace(".webp", ""))
-          )
-     );
+          fetch(`${CDN_BASE_URL}/thumbnails/${album}`)
+               .then(res => res.ok ? res.text() : "")
+               .then(html =>
+                    [...html.matchAll(/href="([^"]+\.(jpg|jpeg|png|webp))"/gi)]
+                         .map(m => `${album}/${m[1]}`.replace(".webp", ""))
+               )
+          );
      const results = await Promise.all(albumFetches);
      return results.flat();
 }

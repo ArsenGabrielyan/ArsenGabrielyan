@@ -12,7 +12,11 @@
       "photos": "Photos",
       "projects": "Projects"
     },
-    "title": "My achievements"
+    "title": "My achievements",
+    "empty": {
+      "title": "No Achievements found",
+      "desc": "At this point, achievements have not yet been published."
+    }
   },
   "gallery": {
     "albums": "Albums",
@@ -22,7 +26,11 @@
       "formatted": "Photo <blue>Gallery</blue>",
       "original": "Photo Gallery"
     },
-    "toggle": "Toggle menu"
+    "toggle": "Toggle menu",
+    "empty": {
+      "title": "No photos found",
+      "desc": "At this point, photos have not yet been published."
+    }
   },
   "hero-section": {
     "sub-title": "Frontend Developer",
@@ -67,6 +75,26 @@
         "title": "Scientific Experiments"
       }
     },
-    "title": "What I'm currently doing?"
+    "title": "What I'm currently doing?",
+    "empty": {
+      "title": "Nothing to do",
+      "desc": "I have nothing to do at the moment :-)"
+    }
+  },
+  "portfolio": {
+    "buttons": {
+      "view-github": "View on GitHub",
+      "visit": "Visit"
+    },
+    "desc": "Here you will see my projects, videos, and other creations.",
+    "title": "Portfolio",
+    "types": {
+      "other": "All creations",
+      "project": "Projects"
+    },
+    "empty": {
+      "title": "No projects found",
+      "desc": "At this point, projects have not yet been published."
+    }
   }
 }

@@ -1,5 +1,4 @@
 import hyWebsite from "@i18n/hy/website.json"
-import hyPortfolio from "@i18n/hy/portfolio.json"
 import hyContact from "@i18n/hy/contact.json"
 
 import { NamespaceKeys, NestedKeyOf, useTranslations } from "next-intl";
@@ -13,7 +12,6 @@ export interface ILanguage{
 }
 export type MessageSchema = (
      typeof hyWebsite &
-     typeof hyPortfolio &
      typeof hyContact
 )
 

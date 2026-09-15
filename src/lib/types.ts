@@ -1,3 +1,4 @@
+import { LangCodeType } from "@/i18n/types";
 import { LucideProps } from "lucide-react";
 import { ForwardRefExoticComponent, RefAttributes } from "react";
 
@@ -13,8 +14,10 @@ export interface IAchievement{
 }
 export type PortfolioItemType = "project" | "other";
 export interface IPortfolioItem{
+     slug: PortfolioItems
      image?: string,
-     item: PortfolioItems
+     title: Record<LangCodeType, string>,
+     description: Record<LangCodeType, string>
      url: string,
      githubUrl?: string,
      type: PortfolioItemType

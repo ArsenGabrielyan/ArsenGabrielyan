@@ -1,5 +1,5 @@
 import { Code, Camera, FlaskConical } from "lucide-react";
-import { HeaderLinks, IAchievement, IPortfolioItem, IService, PortfolioItems } from "./types";
+import { HeaderLinks, IAchievement, IService } from "./types";
 
 export const ACHIEVEMENTS: IAchievement[] = [
      {count: 12, type: "projects", url: "https://github.com/ArsenGabrielyan?tab=repositories"},
@@ -7,54 +7,6 @@ export const ACHIEVEMENTS: IAchievement[] = [
      {count: 46, type: "photos", url: "https://www.instagram.com/arsen_photo.6973"}
 ]
 export const MAX_COLS = 5;
-export const PORTFOLIO_ITEMS: IPortfolioItem[] = [
-     {
-          image: "/logos/calm-mood.png",
-          item: PortfolioItems.CalmMood,
-          url: "https://calm-mood.vercel.app",
-          githubUrl: "https://github.com/ArsenGabrielyan/calm-mood",
-          type: "project"
-     },
-     {
-          image: "/logos/arsenkids.png",
-          item: PortfolioItems.ArsenKids,
-          url: "https://arsenkids.vercel.app",
-          githubUrl: "https://github.com/ArsenGabrielyan/ArsenKids",
-          type: "project"
-     },
-     {
-          image: "/logos/scientific-crafts.png",
-          item: PortfolioItems.ScientificCrafts,
-          url: "https://gitafizika.vercel.app",
-          githubUrl: "https://github.com/ArsenGabrielyan/scientific-crafts",
-          type: "project"
-     },
-     {
-          image: "/logos/cv-agir.png",
-          item: PortfolioItems.CvAgir,
-          url: "https://cv-agir.vercel.app",
-          githubUrl: "https://github.com/ArsenGabrielyan/cv-agir",
-          type: "project"
-     },
-     {
-          image: "/logos/harts.png",
-          item: PortfolioItems.HartsQuiz,
-          githubUrl: "https://github.com/ArsenGabrielyan/harts-quiz",
-          url: "https://harts-quiz.onrender.com/",
-          type: "project"
-     },
-     {
-          image: "/logos/photo-by-arsen.png",
-          item: PortfolioItems.PhotoByArsen,
-          url: "https://www.instagram.com/arsen_photo.6973/",
-          type: "other"
-     },
-     {
-          item: PortfolioItems.Animations,
-          url: "https://www.youtube.com/playlist?list=PLSI6KSDJfq-IcQ4ld9W1m_f8hnJTNe7gJ",
-          type: "other"
-     },
-]
 export const SERVICES: IService[] = [
      {
           Icon: Code,
