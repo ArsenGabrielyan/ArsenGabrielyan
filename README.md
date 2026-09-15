@@ -4,7 +4,7 @@
 <p align="center">
   <img src="https://img.shields.io/github/followers/ArsenGabrielyan?label=Followers&style=for-the-badge&logo=github" alt="Github Followers"/>
   <img alt="GitHub Stars" src="https://img.shields.io/github/stars/ArsenGabrielyan?color=yellow&label=Stars&logo=github&style=for-the-badge">
-  <a href="https://www.youtube.com/channel/UC406AOvJFhKXEZjPlwfEqhw" target="_blank"><img alt="YouTube Channel Subscribers" src="https://img.shields.io/youtube/channel/subscribers/UC406AOvJFhKXEZjPlwfEqhw?color=ff0000&style=for-the-badge&logo=youtube"></a>
+  <a href="https://www.youtube.com/channel/UC406AOvJFhKXEZjPlwfEqhw" target="_blank"><img alt="YouTube Channel" src="https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white"></a>
   <a href="https://arsen-2005.vercel.app/" target="_blank"><img src="https://img.shields.io/website?down_color=ff0000&down_message=Offline&label=Website&style=for-the-badge&up_color=22b455&up_message=Online&url=https%3A%2F%2Farsen-2005.vercel.app%2F" alt="websiteStatus"/></a>
   <img src="https://komarev.com/ghpvc/?username=arsengabrielyan&label=Views&color=orange&style=for-the-badge" alt="arsengabrielyan" />
 </p>
