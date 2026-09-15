@@ -1,0 +1,104 @@
+[
+     {
+          "slug": "calm-mood",
+          "image": "/logos/calm-mood.png",
+          "title": {
+               "hy": "Հանգիստ Տրամադրություն",
+               "en": "Calm Mood"
+          },
+          "description": {
+               "hy": "Հավելված, որը կօգնի ձեզ հանգստացնել մարդու նյարդային համակարգը սթրեսի, լարվածության կամ դեպրեսիայի դեպքում։",
+               "en": "An app that helps you calm the human nervous system in case of stress, tension, or depression with the help of nature environments."
+          },
+          "url": "https://calm-mood.vercel.app",
+          "githubUrl": "https://github.com/ArsenGabrielyan/calm-mood",
+          "type": "project"
+     },
+     {
+          "slug": "arsenkids",
+          "image": "/logos/arsenkids.png",
+          "title": {
+               "hy": "ArsenKids | ԱրսենՔիդս",
+               "en": "ArsenKids"
+          },
+          "description": {
+               "hy": "Կրթական նախագիծ՝ հետաքրքիր խաղերով, որոնք ուսուցումը զվարճալի են դարձնում նոր սերնդի երեխաների համար",
+               "en": "A standalone educational project with engaging games that make learning fun for a new generation of children"
+          },
+          "url": "https://arsenkids.vercel.app",
+          "githubUrl": "https://github.com/ArsenGabrielyan/ArsenKids",
+          "type": "project"
+     },
+     {
+          "slug": "scientific-crafts",
+          "image": "/logos/scientific-crafts.png",
+          "title": {
+               "hy": "Գիտաֆիզիկա",
+               "en": "Scientific Crafts"
+          },
+          "description": {
+               "hy": "Դիտեք և Ուսումնասիրեք Գիտության, Ֆիզիկայի, Քիմիայի և ԳՏՃՄ-ի Մասին։",
+               "en": "Look and Study About Science, Physics, Chemistry, and STEM."
+          },
+          "url": "https://gitafizika.vercel.app",
+          "githubUrl": "https://github.com/ArsenGabrielyan/scientific-crafts",
+          "type": "project"
+     },
+     {
+          "slug": "cv-agir",
+          "image": "/logos/cv-agir.png",
+          "title": {
+               "hy": "CV-ագիր",
+               "en": "CV-agir"
+          },
+          "description": {
+               "hy": "Ինտերակտիվ ռեզյումեի գեներատոր, որն ունի QR կոդ յուրաքանչյուր օգտատիրոջ կողմից ստեղծված ռեզյումեի վրա",
+               "en": "Interactive resume generator that has a QR code on each user-generated resume"
+          },
+          "url": "https://cv-agir.vercel.app",
+          "githubUrl": "https://github.com/ArsenGabrielyan/cv-agir",
+          "type": "project"
+     },
+     {
+          "slug": "harts",
+          "image": "/logos/harts.png",
+          "title": {
+               "hy": "Հարց (Բետա տարբերակ 2)",
+               "en": "Harts (Beta 2)"
+          },
+          "description": {
+               "hy": "Առցանց խաղային ուսուցման հարթակ՝ օգտատիրոջ կողմից ստեղծված թեստերով",
+               "en": "Online gamified learning platform with user-generated quizzes"
+          },
+          "githubUrl": "https://github.com/ArsenGabrielyan/harts-quiz",
+          "url": "https://harts-quiz.onrender.com/",
+          "type": "project"
+     },
+     {
+          "slug": "photo-by-arsen",
+          "image": "/logos/photo-by-arsen.png",
+          "title": {
+               "hy": "Photo By Arsen | Լուսանկարներ Արսենից",
+               "en": "Photo By Arsen"
+          },
+          "description": {
+               "hy": "Լուսանկարներ, որը նկարահանել եմ ճանապարհորդելու ընթացքում:",
+               "en": "Photos I took while traveling."
+          },
+          "url": "https://www.instagram.com/arsen_photo.6973/",
+          "type": "other"
+     },
+     {
+          "slug": "animations",
+          "title": {
+               "hy": "Անիմացիաներ",
+               "en": "Cartoons"
+          },
+          "description": {
+               "hy": "Հետաքրքիր մուլտֆիլմներ բոլորի համար։ Այս մուլտֆիլմերը պատրաստել եմ, երբ ես փոքր էի",
+               "en": "Interesting cartoons for everyone. I made these cartoons when I was a kid."
+          },
+          "url": "https://www.youtube.com/playlist?list=PLSI6KSDJfq-IcQ4ld9W1m_f8hnJTNe7gJ",
+          "type": "other"
+     }
+]

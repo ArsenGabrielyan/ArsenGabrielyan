@@ -14,12 +14,12 @@ jobs:
       - name: Generate Directory Listings
         uses: jayanta525/github-pages-directory-listing@v4.0.0
         with:
-          FOLDER: images
+          FOLDER: data
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3.0.1
         with:
-          path: 'images'
+          path: 'data'
 
   deploy:
     needs: pages-directory-listing
