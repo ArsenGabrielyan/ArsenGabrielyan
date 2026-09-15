@@ -10,8 +10,10 @@ const getPhotos = cache(getPhotoPaths)
 const fetchAlbums = cache(getAlbums)
 
 export const generateMetadata = async({searchParams}: {searchParams: Promise<{pageSize?: string,page?:string}>}): Promise<Metadata> => {
-     const {page} = await searchParams;
-     const photoPaths = await getPhotos();
+     const [{page}, photoPaths] = await Promise.all([
+          searchParams,
+          getPhotos()
+     ])
      const pageNum = page ? parseInt(page) : 1;
      const t = await getTranslations("gallery")
      return {
@@ -29,9 +31,11 @@ export const generateMetadata = async({searchParams}: {searchParams: Promise<{pa
 const PHOTOS_PER_PAGE = 25;
 
 export default async function Gallery({searchParams}: {searchParams: Promise<{pageSize?: string,page?:string}>}){
-     const params = await searchParams;
-     const albums = await fetchAlbums();
-     const photoPaths = await getPhotos();
+     const [params,albums,photoPaths] = await Promise.all([
+          searchParams,
+          fetchAlbums(),
+          getPhotos()
+     ])
 
      const pageSize = params?.pageSize ? parseInt(params.pageSize) : PHOTOS_PER_PAGE;
      const pageNum = params?.page ? parseInt(params.page) : 1;

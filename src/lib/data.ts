@@ -2,7 +2,7 @@ import { cache } from "react";
 import { CDN_BASE_URL } from "./utils";
 import { IPortfolioItem } from "./types";
 
-export const getPortfolioFromCDN = cache(async (): Promise<IPortfolioItem[]> => {
+export const getPortfolio = cache(async (): Promise<IPortfolioItem[]> => {
      try {
           const res = await fetch(`${CDN_BASE_URL}/projects.json`);
           if(!res.ok) return []

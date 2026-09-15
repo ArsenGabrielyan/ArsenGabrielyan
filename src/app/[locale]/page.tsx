@@ -5,10 +5,10 @@ import ContactSection from "@/components/sections/contact";
 import HeroSection from "@/components/sections/hero";
 import PortfolioSection from "@/components/sections/portfolio";
 import ServicesSection from "@/components/sections/services";
-import { getPortfolioFromCDN } from "@/lib/data";
+import { getPortfolio } from "@/lib/data";
 
 export default async function Home() {
-  const allProjects = await getPortfolioFromCDN()
+  const allProjects = await getPortfolio()
   return (
     <PageLayout>
       <HeroSection/>

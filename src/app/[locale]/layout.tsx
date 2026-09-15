@@ -30,7 +30,7 @@ export interface RootLayoutProps{
   params: Promise<{locale: string}>
 }
 
-// Todo: Add OpenGraph, and Twitter
+// Todo: Add OpenGraph, and Twitter images
 export async function generateMetadata({params}: RootLayoutProps): Promise<Metadata> {
   const {locale} = await params;
   if (!hasLocale(routing.locales, locale)) return notFound();
