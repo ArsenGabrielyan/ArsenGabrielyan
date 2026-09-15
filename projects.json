@@ -1,5 +1,6 @@
 [
      {
+          "slug": "calm-mood",
           "image": "/logos/calm-mood.png",
           "title": {
                "hy": "Հանգիստ Տրամադրություն",
@@ -14,6 +15,7 @@
           "type": "project"
      },
      {
+          "slug": "arsenkids",
           "image": "/logos/arsenkids.png",
           "title": {
                "hy": "ArsenKids | ԱրսենՔիդս",
@@ -28,6 +30,7 @@
           "type": "project"
      },
      {
+          "slug": "scientific-crafts",
           "image": "/logos/scientific-crafts.png",
           "title": {
                "hy": "Գիտաֆիզիկա",
@@ -42,6 +45,7 @@
           "type": "project"
      },
      {
+          "slug": "cv-agir",
           "image": "/logos/cv-agir.png",
           "title": {
                "hy": "CV-ագիր",
@@ -56,6 +60,7 @@
           "type": "project"
      },
      {
+          "slug": "harts",
           "image": "/logos/harts.png",
           "title": {
                "hy": "Հարց (Բետա տարբերակ 2)",
@@ -70,6 +75,7 @@
           "type": "project"
      },
      {
+          "slug": "photo-by-arsen",
           "image": "/logos/photo-by-arsen.png",
           "title": {
                "hy": "Photo By Arsen | Լուսանկարներ Արսենից",
@@ -83,6 +89,7 @@
           "type": "other"
      },
      {
+          "slug": "animations",
           "title": {
                "hy": "Անիմացիաներ",
                "en": "Cartoons"
