@@ -44,10 +44,10 @@
 ### :zap: Ակտիվություն
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#1](https://github.com/ArsenGabrielyan/scientific-crafts/pull/1) in [ArsenGabrielyan/scientific-crafts](https://github.com/ArsenGabrielyan/scientific-crafts)
-2. 🚀 Published release [Calm Mood Desktop v0.2.1](https://github.com/ArsenGabrielyan/calm-mood-desktop/releases/tag/v0.2.1) in [ArsenGabrielyan/calm-mood-desktop](https://github.com/ArsenGabrielyan/calm-mood-desktop)
-3. 🚀 Published release [Calm Mood Desktop v0.2.0](https://github.com/ArsenGabrielyan/calm-mood-desktop/releases/tag/v0.2.0) in [ArsenGabrielyan/calm-mood-desktop](https://github.com/ArsenGabrielyan/calm-mood-desktop)
-4. 🚀 Published release [Calm Mood Desktop v0.1.0](https://github.com/ArsenGabrielyan/calm-mood-desktop/releases/tag/v0.1.0) in [ArsenGabrielyan/calm-mood-desktop](https://github.com/ArsenGabrielyan/calm-mood-desktop)
+1. 🚀 Published release [Calm Mood Desktop v0.4.2](https://github.com/Calm-Mood/calm-mood-desktop/releases/tag/v0.4.2) in [ArsenGabrielyan/calm-mood-desktop](https://github.com/Calm-Mood/calm-mood-desktop)
+2. 🚀 Published release [Calm Mood Desktop v0.2.1](https://github.com/Calm-Mood/calm-mood-desktop/releases/tag/v0.2.1) in [ArsenGabrielyan/calm-mood-desktop](https://github.com/Calm-Mood/calm-mood-desktop)
+3. 🚀 Published release [Calm Mood Desktop v0.2.0](https://github.com/Calm-Mood/calm-mood-desktop/releases/tag/v0.2.0) in [ArsenGabrielyan/calm-mood-desktop](https://github.com/Calm-Mood/calm-mood-desktop)
+4. 🚀 Published release [Calm Mood Desktop v0.1.0](https://github.com/Calm-Mood/calm-mood-desktop/releases/tag/v0.1.0) in [ArsenGabrielyan/calm-mood-desktop](https://github.com/Calm-Mood/calm-mood-desktop)
 5. 🎉 Merged PR [#7](https://github.com/ArsenGabrielyan/webDevPractics/pull/7) in [ArsenGabrielyan/webDevPractics](https://github.com/ArsenGabrielyan/webDevPractics)
 <!--END_SECTION:activity-->
   
@@ -57,6 +57,12 @@
 
 <!-- REPOS-START -->
 - [ArsenKids](https://github.com/ArsenGabrielyan/ArsenKids) - ⭐ 0 - 🎓 A standalone educational project with exciting games that make learning fun for children of the new generation
+<<<<<<< HEAD
+=======
+- [calm-mood](https://github.com/Calm-Mood/calm-mood) - ⭐ 1 - 🌿 A standalone meditation app that helps you calm the human nervous system in case of stress, tension or depression.
+- [calm-mood-desktop](https://github.com/Calm-Mood/calm-mood-desktop) - ⭐ 1 - 🌿 A standalone wellness desktop app that helps you calm the human nervous system in case of stress, tension or depression.
+- [cv-agir-community](https://github.com/ArsenGabrielyan/cv-agir-community) - ⭐ 2 - 📄 Interactive resume generator that has a QR code on each user-generated resume
+>>>>>>> 290e363 (Changed the URL of Calm Mood related repos)
 - [harts-quiz](https://github.com/ArsenGabrielyan/harts-quiz) - ⭐ 1 - ⚡ Online gamified learning platform with user-generated diverse quizzes. It's currently in a Beta version
 - [scientific-crafts](https://github.com/ArsenGabrielyan/scientific-crafts) - ⭐ 0 - 🧪 A standalone science project featuring exciting experiments and templates that make physics, chemistry, STEM, and science more engaging.
 <!-- REPOS-END -->
