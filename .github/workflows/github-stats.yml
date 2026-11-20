@@ -4,50 +4,97 @@ on:
   schedule:
     - cron: '0 3 * * *'
   push:
-    branches: [ main, master ]
-    paths: [ '.github/workflows/github-stats.yml' ]
+    branches: [main, master]
+    paths: ['.github/workflows/github-stats.yml']
   workflow_dispatch:
+
+concurrency:
+  group: user-statistician
+  cancel-in-progress: false
 
 jobs:
   stats:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      
     steps:
-    - uses: actions/checkout@v4
-      with:
-        ref: stats-output
+      - uses: actions/checkout@v4
+        with:
+          ref: stats-output
+          fetch-depth: 1
 
-    - name: Generate English stats
-      uses: cicirello/user-statistician@v1
-      with:
-        image-file: stats.svg
-        colors: dark-dimmed
-      env:
-        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - name: Generate English stats
+        uses: cicirello/user-statistician@v1
+        with:
+          image-file: stats.svg
+          colors: dark-dimmed
+          commit-and-push: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Generate English stats (light)
-      uses: cicirello/user-statistician@v1
-      with:
-        image-file: stats-light.svg
-        colors: light
-      env:
-        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - name: Generate English stats (light)
+        uses: cicirello/user-statistician@v1
+        with:
+          image-file: stats-light.svg
+          colors: light
+          commit-and-push: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Generate Armenian stats
-      uses: cicirello/user-statistician@v1
-      with:
-        image-file: hy/stats.svg
-        colors: dark-dimmed
-        locale: hy
-      env:
-        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - name: Generate Armenian stats
+        uses: cicirello/user-statistician@v1
+        with:
+          image-file: hy/stats.svg
+          colors: dark-dimmed
+          locale: hy
+          commit-and-push: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Generate Armenian stats (light)
-      uses: cicirello/user-statistician@v1
-      with:
-        image-file: hy/stats-light.svg
-        colors: light
-        locale: hy
-      env:
-        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - name: Generate Armenian stats (light)
+        uses: cicirello/user-statistician@v1
+        with:
+          image-file: hy/stats-light.svg
+          colors: light
+          locale: hy
+          commit-and-push: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Replace stats branch history
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Check whether the generated files changed
+          git add -- \
+            stats.svg \
+            stats-light.svg \
+            hy/stats.svg \
+            hy/stats-light.svg
+
+          if git diff --cached --quiet; then
+            echo "No statistics changed."
+            exit 0
+          fi
+
+          # Build a clean index containing only the four SVGs
+          export GIT_INDEX_FILE="$(mktemp)"
+          rm -f "$GIT_INDEX_FILE"
+
+          git add -- \
+            stats.svg \
+            stats-light.svg \
+            hy/stats.svg \
+            hy/stats-light.svg
+
+          TREE=$(git write-tree)
+          COMMIT=$(echo "Update GitHub statistics" | git commit-tree "$TREE")
+
+          git push --force origin "$COMMIT:refs/heads/stats-output"
+
+          rm -f "$GIT_INDEX_FILE"
