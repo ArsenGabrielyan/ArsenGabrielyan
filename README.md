@@ -55,11 +55,12 @@
 
 ### :blue_book: Իմ պրոյեկտները
 
-<!-- REPOS-START -->
-- [ArsenKids](https://github.com/ArsenGabrielyan/ArsenKids) - ⭐ 0 - 🎓 A standalone educational project with exciting games that make learning fun for children of the new generation
-- [harts-quiz](https://github.com/ArsenGabrielyan/harts-quiz) - ⭐ 1 - ⚡ Online gamified learning platform with user-generated diverse quizzes. It's currently in a Beta version
-- [scientific-crafts](https://github.com/ArsenGabrielyan/scientific-crafts) - ⭐ 0 - 🧪 A standalone science project featuring exciting experiments and templates that make physics, chemistry, STEM, and science more engaging.
-<!-- REPOS-END -->
+- [ArsenKids](https://github.com/ArsenGabrielyan/ArsenKids) - 🎓 Ինքնուրույն կրթական նախագիծ՝ հագեցած հետաքրքիր խաղերով, որոնք նոր սերնդի երեխաների համար ուսումնառությունը դարձնում են զվարճալի։
+- [Հանգիստ Տրամադրություն](https://github.com/ArsenGabrielyan/calm-mood) - 🌿 Մեդիտացիայի ինքնուրույն հավելված, որն օգնում է հանգստացնել մարդու նյարդային համակարգը սթրեսի, լարվածության կամ դեպրեսիայի դեպքում։
+- [Calm Mood Desktop](https://github.com/ArsenGabrielyan/calm-mood-desktop) - 🌿 «Հանգիստ Տրամադրություն» հավելվածի համակարգչային կիրառական օֆլայն տարբերակ
+- [CV-ագիր](https://github.com/ArsenGabrielyan/cv-agir-community) - 📄 Ինտերակտիվ ռեզյումեների գեներատոր, որի միջոցով ստեղծված յուրաքանչյուր ռեզյումե պարունակում է QR կոդ
+- [Հարց](https://github.com/ArsenGabrielyan/harts-quiz) - ⚡ Խաղայնացված ուսուցման առցանց հարթակ՝ օգտատերերի կողմից ստեղծված բազմազան վիկտորինաներով։ Ներկայումս այն գտնվում է բետա տարբերակում։
+- [Գիտաֆիզիկա](https://github.com/ArsenGabrielyan/scientific-crafts) - 🧪 Ինքնուրույն գիտական ​​նախագիծ՝ հագեցած հետաքրքիր փորձարկումներով և ձևանմուշներով, որոնք ֆիզիկան, քիմիան, ԳՏՃՄ-ն ու գիտությունն ավելի գրավիչ են դարձնում։
 
 ---
   
