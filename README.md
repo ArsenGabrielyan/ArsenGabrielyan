@@ -44,10 +44,10 @@
 ### :zap: Ակտիվություն
 
 <!--START_SECTION:activity-->
-1. 🚀 Published release [Calm Mood Desktop v0.4.2](https://github.com/Calm-Mood/calm-mood-desktop/releases/tag/v0.4.2) in [ArsenGabrielyan/calm-mood-desktop](https://github.com/Calm-Mood/calm-mood-desktop)
-2. 🚀 Published release [Calm Mood Desktop v0.2.1](https://github.com/Calm-Mood/calm-mood-desktop/releases/tag/v0.2.1) in [ArsenGabrielyan/calm-mood-desktop](https://github.com/Calm-Mood/calm-mood-desktop)
-3. 🚀 Published release [Calm Mood Desktop v0.2.0](https://github.com/Calm-Mood/calm-mood-desktop/releases/tag/v0.2.0) in [ArsenGabrielyan/calm-mood-desktop](https://github.com/Calm-Mood/calm-mood-desktop)
-4. 🚀 Published release [Calm Mood Desktop v0.1.0](https://github.com/Calm-Mood/calm-mood-desktop/releases/tag/v0.1.0) in [ArsenGabrielyan/calm-mood-desktop](https://github.com/Calm-Mood/calm-mood-desktop)
+1. 🚀 Published release [Calm Mood Desktop v0.4.2](https://github.com/Calm-Mood/calm-mood-desktop/releases/tag/v0.4.2) in [Calm-Mood/calm-mood-desktop](https://github.com/Calm-Mood/calm-mood-desktop)
+2. 🚀 Published release [Calm Mood Desktop v0.2.1](https://github.com/Calm-Mood/calm-mood-desktop/releases/tag/v0.2.1) in [Calm-Mood/calm-mood-desktop](https://github.com/Calm-Mood/calm-mood-desktop)
+3. 🚀 Published release [Calm Mood Desktop v0.2.0](https://github.com/Calm-Mood/calm-mood-desktop/releases/tag/v0.2.0) in [Calm-Mood/calm-mood-desktop](https://github.com/Calm-Mood/calm-mood-desktop)
+4. 🚀 Published release [Calm Mood Desktop v0.1.0](https://github.com/Calm-Mood/calm-mood-desktop/releases/tag/v0.1.0) in [Calm-Mood/calm-mood-desktop](https://github.com/Calm-Mood/calm-mood-desktop)
 5. 🎉 Merged PR [#7](https://github.com/ArsenGabrielyan/webDevPractics/pull/7) in [ArsenGabrielyan/webDevPractics](https://github.com/ArsenGabrielyan/webDevPractics)
 <!--END_SECTION:activity-->
   
@@ -56,9 +56,9 @@
 ### :blue_book: Իմ պրոյեկտները
 
 - [ArsenKids](https://github.com/ArsenGabrielyan/ArsenKids) - 🎓 Ինքնուրույն կրթական նախագիծ՝ հագեցած հետաքրքիր խաղերով, որոնք նոր սերնդի երեխաների համար ուսումնառությունը դարձնում են զվարճալի։
-- [Հանգիստ Տրամադրություն](https://github.com/ArsenGabrielyan/calm-mood) - 🌿 Մեդիտացիայի ինքնուրույն հավելված, որն օգնում է հանգստացնել մարդու նյարդային համակարգը սթրեսի, լարվածության կամ դեպրեսիայի դեպքում։
-- [Calm Mood Desktop](https://github.com/ArsenGabrielyan/calm-mood-desktop) - 🌿 «Հանգիստ Տրամադրություն» հավելվածի համակարգչային կիրառական օֆլայն տարբերակ
-- [CV-ագիր](https://github.com/ArsenGabrielyan/cv-agir-community) - 📄 Ինտերակտիվ ռեզյումեների գեներատոր, որի միջոցով ստեղծված յուրաքանչյուր ռեզյումե պարունակում է QR կոդ
+- [Հանգիստ Տրամադրություն](https://github.com/Calm-Mood/calm-mood) - 🌿 Մեդիտացիայի ինքնուրույն հավելված, որն օգնում է հանգստացնել մարդու նյարդային համակարգը սթրեսի, լարվածության կամ դեպրեսիայի դեպքում։
+- [Calm Mood Desktop](https://github.com/Calm-Mood/calm-mood-desktop) - 🌿 «Հանգիստ Տրամադրություն» հավելվածի համակարգչային կիրառական օֆլայն տարբերակ
+- [CV-ագիր](https://github.com/CV-agir/cv-agir-community) - 📄 Ինտերակտիվ ռեզյումեների գեներատոր, որի միջոցով ստեղծված յուրաքանչյուր ռեզյումե պարունակում է QR կոդ
 - [Հարց](https://github.com/ArsenGabrielyan/harts-quiz) - ⚡ Խաղայնացված ուսուցման առցանց հարթակ՝ օգտատերերի կողմից ստեղծված բազմազան վիկտորինաներով։ Ներկայումս այն գտնվում է բետա տարբերակում։
 - [Գիտաֆիզիկա](https://github.com/ArsenGabrielyan/scientific-crafts) - 🧪 Ինքնուրույն գիտական ​​նախագիծ՝ հագեցած հետաքրքիր փորձարկումներով և ձևանմուշներով, որոնք ֆիզիկան, քիմիան, ԳՏՃՄ-ն ու գիտությունն ավելի գրավիչ են դարձնում։
 
